@@ -102,3 +102,134 @@ cities.remove("Lyon")
 print(cities)
 let alphabeticalCities = cities.sorted()
 
+// Modélisation
+
+// Structures
+// Fonctionnent par copie
+
+struct Human {
+    let firstName: String
+    var lastName: String
+    var age: Int
+
+    init(firstName: String, lastName: String, age: Int) {
+        self.firstName = firstName
+        self.lastName = lastName
+        self.age = age
+    }
+}
+let me = Human(firstName: "Ludovic",
+               lastName: "Ollagnier",
+               age: 34)
+let somebodyElse = Human(firstName: "Iris",
+                         lastName: "Ollagnier",
+                         age: 4)
+var you = me
+you.age = 35
+
+// Classes
+// Fonctionnent par référence
+
+class Animal {
+    let name: String
+    var age: Int
+
+    init(name: String, age: Int) {
+        self.name = name
+        self.age = age
+    }
+
+    init() {
+        name = ""
+        age = 0
+    }
+}
+
+class Dog: Animal {
+    var race: String
+
+    init(name: String, age: Int, race: String) {
+        self.race = race
+        super.init(name: name, age: age)
+    }
+
+    override init() {
+        race = "Berger"
+        super.init()
+    }
+}
+
+let medor = Dog()
+medor.age = 5
+// medor.name = "Médor"
+// Cannot assign to property: 'name' is a 'let' constant
+
+let brutus = medor
+brutus.age = 6
+
+print(medor.age)
+
+// Enumerations
+// Liste finie de possibilités
+enum CompassPoint {
+    case north
+    case south
+    case west
+    case east
+}
+
+var currentDirection = CompassPoint.north
+currentDirection = .east
+
+// Récursion impossible avec struct
+//struct A {
+//    var b: B
+//
+//    init(b: B) {
+//        self.b = b
+//    }
+//}
+//
+//struct B {
+//    var a: A
+//
+//    init(a: A) {
+//        self.a = a
+//    }
+//}
+
+// Optionals
+
+class Human2 {
+    let firstName: String
+//    var child: Optional<Human2>
+    var child: Human2?
+
+    init(firstName: String) {
+        self.firstName = firstName
+//        child = Optional.none
+        child = nil
+    }
+}
+
+var human = Human2(firstName: "Ludovic")
+//human.child = Human2(firstName: "Toto")
+
+if let childName = human.child?.firstName {
+    print(childName)
+} else {
+    print("No child")
+}
+
+var capitals = ["France": "Paris", "Espagne":"Madrid"]
+
+// if-let "déballe" (unwrap) l'optional
+if let capfrance = capitals["France"]  { // Paris
+    print("La capitale de la France est \(capfrance)")
+}
+var capIrlande = capitals["Irlande"] // nil
+print(capIrlande)
+
+capitals["Irlande"] = "Dublin"
+capIrlande = capitals["Irlande"]
+print(capIrlande)
