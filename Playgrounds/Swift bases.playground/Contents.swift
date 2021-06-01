@@ -233,3 +233,24 @@ print(capIrlande)
 capitals["Irlande"] = "Dublin"
 capIrlande = capitals["Irlande"]
 print(capIrlande)
+
+struct City: Hashable, Equatable {
+    let name: String
+    var population: Int
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(name)
+//        hasher.combine(population)
+    }
+
+    static func ==(lhs: City, rhs: City) -> Bool {
+        return lhs.name == rhs.name
+    }
+}
+
+let parisFr = City(name: "Paris", population: 1_000_000)
+let parisTx = City(name: "Paris", population: 5_000)
+var citiesSet: Set<City> = []
+
+citiesSet.insert(parisFr)
+citiesSet.insert(parisTx) // ParisTx not inserted because its equal to ParisFr even if it not exactly the same

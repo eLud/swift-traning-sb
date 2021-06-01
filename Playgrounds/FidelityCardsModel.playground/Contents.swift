@@ -14,17 +14,24 @@ struct Card {
     let originBrand: String
     let ownerName: String
     var validityDate: Date?
-    var isValid: Bool
     var isPayment: Bool
     var pointsAvailable: Int
+
+    // Computed property get-only
+    var isValid: Bool {
+        if let validity = validityDate {
+            let currentDate = Date()
+            return validity > currentDate
+        }
+        return true
+    }
+
 
     init(cardNumber: String, originBrand: String, ownerName: String, validityDate: Date?) {
         self.cardNumber = cardNumber
         self.originBrand = originBrand
         self.ownerName = ownerName
         self.validityDate = validityDate
-
-        self.isValid = true
         self.isPayment = false
         self.pointsAvailable = 0
     }
@@ -62,3 +69,6 @@ struct Shop {
 }
 
 
+var card = Card(cardNumber: "", originBrand: "", ownerName: "", validityDate: nil)
+
+print(card.isValid)
