@@ -9,10 +9,10 @@ import SwiftUI
 
 @main
 struct FidelityApp: App {
-    
+
     var body: some Scene {
         WindowGroup {
-            ContentView(card: Card.demoCard)
+            CardList()
         }
     }
 }

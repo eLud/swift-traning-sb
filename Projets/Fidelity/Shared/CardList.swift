@@ -11,9 +11,7 @@ struct CardList: View {
     var body: some View {
         List {
             CardHeader(card: Card.demoCard)
-            CardHeader(card: Card.demoCard)
-            CardHeader(card: Card.demoCard)
-            CardHeader(card: Card.demoCard)
+            CardHeader(card: Card.demoCardWithoutShop)
         }
     }
 }

@@ -52,4 +52,10 @@ struct Card {
 
         return Card(cardNumber: "087652345678", originBrand: fnac, ownerName: "Ludovic Ollagnier", validityDate: Date())
     }
+
+    static var demoCardWithoutShop: Card {
+        let fnac = Brand(name: "Fnac")
+
+        return Card(cardNumber: "087652345678", originBrand: fnac, ownerName: "Ludovic Ollagnier", validityDate: Date())
+    }
 }

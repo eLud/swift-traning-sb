@@ -28,7 +28,7 @@ struct ContentView: View {
             }
         }
         .padding()
-        .background(Color.yellow)
+        .background(Color("fnacColor"))
         .cornerRadius(10)
         .shadow(radius: 10)
         .padding()
@@ -38,6 +38,10 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
 
-        return ContentView(card: Card.demoCard)
+        Group {
+            ContentView(card: Card.demoCard)
+            ContentView(card: Card.demoCardWithoutShop)
+                .preferredColorScheme(.dark)
+        }
     }
 }

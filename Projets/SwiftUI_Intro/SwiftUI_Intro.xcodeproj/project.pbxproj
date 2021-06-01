@@ -13,6 +13,12 @@
 		3325BC9C26662ECB00D573CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BC8726662EC800D573CD /* ContentView.swift */; };
 		3325BC9D26662ECB00D573CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3325BC8826662ECA00D573CD /* Assets.xcassets */; };
 		3325BC9E26662ECB00D573CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3325BC8826662ECA00D573CD /* Assets.xcassets */; };
+		332DB9FF26667D3700A14699 /* StaticList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332DB9FE26667D3700A14699 /* StaticList.swift */; };
+		332DBA0026667D3700A14699 /* StaticList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332DB9FE26667D3700A14699 /* StaticList.swift */; };
+		332DBA0226667F9800A14699 /* DynamicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332DBA0126667F9800A14699 /* DynamicList.swift */; };
+		332DBA0326667F9800A14699 /* DynamicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332DBA0126667F9800A14699 /* DynamicList.swift */; };
+		332DBA052666810A00A14699 /* DynamicListIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332DBA042666810A00A14699 /* DynamicListIdentifiable.swift */; };
+		332DBA062666810A00A14699 /* DynamicListIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332DBA042666810A00A14699 /* DynamicListIdentifiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,9 @@
 		3325BC9526662ECB00D573CD /* SwiftUI_Intro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Intro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3325BC9726662ECB00D573CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3325BC9826662ECB00D573CD /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		332DB9FE26667D3700A14699 /* StaticList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticList.swift; sourceTree = "<group>"; };
+		332DBA0126667F9800A14699 /* DynamicList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicList.swift; sourceTree = "<group>"; };
+		332DBA042666810A00A14699 /* DynamicListIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicListIdentifiable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +68,9 @@
 			children = (
 				3325BC8626662EC800D573CD /* SwiftUI_IntroApp.swift */,
 				3325BC8726662EC800D573CD /* ContentView.swift */,
+				332DB9FE26667D3700A14699 /* StaticList.swift */,
+				332DBA0126667F9800A14699 /* DynamicList.swift */,
+				332DBA042666810A00A14699 /* DynamicListIdentifiable.swift */,
 				3325BC8826662ECA00D573CD /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -187,8 +199,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				332DB9FF26667D3700A14699 /* StaticList.swift in Sources */,
+				332DBA0226667F9800A14699 /* DynamicList.swift in Sources */,
 				3325BC9B26662ECB00D573CD /* ContentView.swift in Sources */,
 				3325BC9926662ECB00D573CD /* SwiftUI_IntroApp.swift in Sources */,
+				332DBA052666810A00A14699 /* DynamicListIdentifiable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +211,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				332DBA0026667D3700A14699 /* StaticList.swift in Sources */,
+				332DBA0326667F9800A14699 /* DynamicList.swift in Sources */,
 				3325BC9C26662ECB00D573CD /* ContentView.swift in Sources */,
 				3325BC9A26662ECB00D573CD /* SwiftUI_IntroApp.swift in Sources */,
+				332DBA062666810A00A14699 /* DynamicListIdentifiable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
