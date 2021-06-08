@@ -10,6 +10,7 @@ import SwiftUI
 struct Card: Identifiable {
 
     let cardNumber: String
+    var active: Bool = false
 
     var id: String {
         cardNumber
@@ -22,7 +23,11 @@ struct Card: Identifiable {
 
 struct DynamicListIdentifiable: View {
 
-    @State var cards: [Card] = [Card(cardNumber: "2345678"), Card(cardNumber: "876543")]
+    // @Qqchose : Property Wrapper
+    // Var qui participe à l'état de la vue
+    // Définit la "source de vérité"
+    @State private var cards: [Card] = [Card(cardNumber: "2345678"), Card(cardNumber: "876543")]
+    @State private var username: String = "Ludovic"
 
     var body: some View {
         VStack {
@@ -33,10 +38,27 @@ struct DynamicListIdentifiable: View {
                 Button("Remove Card") {
                     cards.remove(at: Int.random(in: 0..<cards.count))
                 }
+                Button("Shuffle Cards") {
+                    cards.move(fromOffsets: IndexSet([0]), toOffset: 5)
+                }
             }
-            List(cards) { card in
-                Text(card.cardNumber)
+            TextField("FirstName", text: $username)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+            TextField("FirstName", text: $username)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+            Text(username)
+            List {
+                ForEach(0..<cards.count) { index in
+                    HStack {
+                        Text(cards[index].cardNumber)
+                            .foregroundColor(cards[index].active ? Color(.label) : Color(.secondaryLabel))
+                        Spacer()
+                        Toggle("", isOn: $cards[index].active)
+                        ActiveIndicator(isActive: $cards[index].active)
+                    }
+                }
             }
+            .listStyle(InsetGroupedListStyle())
             .animation(.easeIn)
         }
     }

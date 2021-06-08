@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DynamicList: View {
 
-    var data = ["A", "B", "C", "D", "E"]
+    let data = ["A", "B", "C", "D", "E"]
 
     var body: some View {
         List(data, id: \.self) { element in

@@ -1,0 +1,17 @@
+[sframe]
+version=0
+num_segments=0
+num_columns=5
+nrows=5631
+[column_names]
+0000=session_id
+0001=WatchAccY
+0002=WatchAccZ
+0003=label
+0004=WatchAccX
+[column_files]
+0000=m_3a6b0568655e5e5c.sidx:0
+0001=m_3a6b0568655e5e5c.sidx:1
+0002=m_3a6b0568655e5e5c.sidx:2
+0003=m_3a6b0568655e5e5c.sidx:3
+0004=m_3a6b0568655e5e5c.sidx:4
