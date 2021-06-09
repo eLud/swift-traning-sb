@@ -10,9 +10,11 @@ import SwiftUI
 struct ContentView: View {
 
     var body: some View {
-        VStack {
-            TooMuchBeerView(text: "Hello Swift", imageName: "doc.circle")
-            TooMuchBeerView(text: "Hello SwiftUI", imageName: "calendar.circle.fill")
+        ZStack {
+            VStack {
+                TooMuchBeerView(text: "Hello Swift", imageName: "doc.circle")
+                TooMuchBeerView(text: "Hello SwiftUI", imageName: "calendar.circle.fill")
+            }
         }
     }
 }

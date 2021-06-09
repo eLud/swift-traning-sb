@@ -9,21 +9,24 @@ import SwiftUI
 
 struct StaticList: View {
     var body: some View {
-        List {
-            Text("A")
-            Section(header: Text("Truc")) {
-                Text("B")
-                Text("C")
-                Text("D")
-                Text("E")
+        NavigationView {
+            List {
+                Text("A")
+                Section(header: Text("Truc")) {
+                    Text("B")
+                    Text("C")
+                    Text("D")
+                    Text("E")
+                }
+                Text("F")
+                Text("G")
+                Text("H")
+                Text("I")
+                Image(systemName: "creditcard")
+                Image(systemName: "creditcard.fill")
+                Button("Save") {}
             }
-            Text("F")
-            Text("G")
-            Text("H")
-            Text("I")
-            Image(systemName: "creditcard")
-            Image(systemName: "creditcard.fill")
-            Button("Save") {}
+            .navigationTitle("Static List")
         }
     }
 }

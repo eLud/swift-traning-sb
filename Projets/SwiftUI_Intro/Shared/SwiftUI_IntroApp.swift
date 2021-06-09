@@ -9,11 +9,18 @@ import SwiftUI
 
 @main
 struct SwiftUI_IntroApp: App {
-
+    
     var body: some Scene {
         WindowGroup {
-            UserView()
+            #if os(macOS)
+            ColumnRootView()
+            #else
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                ColumnRootView()
+            } else {
+                TabbedRoot()
+            }
+            #endif
         }
     }
-
 }

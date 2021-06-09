@@ -29,6 +29,14 @@
 		332DBA0326667F9800A14699 /* DynamicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332DBA0126667F9800A14699 /* DynamicList.swift */; };
 		332DBA052666810A00A14699 /* DynamicListIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332DBA042666810A00A14699 /* DynamicListIdentifiable.swift */; };
 		332DBA062666810A00A14699 /* DynamicListIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332DBA042666810A00A14699 /* DynamicListIdentifiable.swift */; };
+		3361DBDC2670BCCD000DF571 /* TabbedRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361DBDB2670BCCD000DF571 /* TabbedRoot.swift */; };
+		3361DBDD2670BCCD000DF571 /* TabbedRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361DBDB2670BCCD000DF571 /* TabbedRoot.swift */; };
+		3361DBDF2670BCF6000DF571 /* ColumnRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361DBDE2670BCF6000DF571 /* ColumnRootView.swift */; };
+		3361DBE02670BCF6000DF571 /* ColumnRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361DBDE2670BCF6000DF571 /* ColumnRootView.swift */; };
+		3361DBE22670C357000DF571 /* TextImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361DBE12670C357000DF571 /* TextImageView.swift */; };
+		3361DBE32670C357000DF571 /* TextImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361DBE12670C357000DF571 /* TextImageView.swift */; };
+		3361DBE52670C366000DF571 /* ColoredSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361DBE42670C366000DF571 /* ColoredSymbolView.swift */; };
+		3361DBE62670C366000DF571 /* ColoredSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361DBE42670C366000DF571 /* ColoredSymbolView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +56,10 @@
 		332DB9FE26667D3700A14699 /* StaticList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticList.swift; sourceTree = "<group>"; };
 		332DBA0126667F9800A14699 /* DynamicList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicList.swift; sourceTree = "<group>"; };
 		332DBA042666810A00A14699 /* DynamicListIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicListIdentifiable.swift; sourceTree = "<group>"; };
+		3361DBDB2670BCCD000DF571 /* TabbedRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedRoot.swift; sourceTree = "<group>"; };
+		3361DBDE2670BCF6000DF571 /* ColumnRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnRootView.swift; sourceTree = "<group>"; };
+		3361DBE12670C357000DF571 /* TextImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextImageView.swift; sourceTree = "<group>"; };
+		3361DBE42670C366000DF571 /* ColoredSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredSymbolView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +105,13 @@
 			isa = PBXGroup;
 			children = (
 				3325BC8626662EC800D573CD /* SwiftUI_IntroApp.swift */,
+				3361DBDE2670BCF6000DF571 /* ColumnRootView.swift */,
+				3361DBDB2670BCCD000DF571 /* TabbedRoot.swift */,
 				3325BC8726662EC800D573CD /* ContentView.swift */,
 				332DB9FE26667D3700A14699 /* StaticList.swift */,
 				332DBA0126667F9800A14699 /* DynamicList.swift */,
+				3361DBE12670C357000DF571 /* TextImageView.swift */,
+				3361DBE42670C366000DF571 /* ColoredSymbolView.swift */,
 				332DBA042666810A00A14699 /* DynamicListIdentifiable.swift */,
 				3309FCB2266FBD31000180EB /* Objects */,
 				3325BC8826662ECA00D573CD /* Assets.xcassets */,
@@ -228,15 +244,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				332DB9FF26667D3700A14699 /* StaticList.swift in Sources */,
+				3361DBE22670C357000DF571 /* TextImageView.swift in Sources */,
 				332DBA0226667F9800A14699 /* DynamicList.swift in Sources */,
 				3309FCB7266FC42A000180EB /* UserID2.swift in Sources */,
 				3309FCB0266FBD2B000180EB /* UserData.swift in Sources */,
 				3309FCB4266FC2AA000180EB /* UserIDCard.swift in Sources */,
+				3361DBDF2670BCF6000DF571 /* ColumnRootView.swift in Sources */,
 				3325BC9B26662ECB00D573CD /* ContentView.swift in Sources */,
 				3309FC8D266F7CCE000180EB /* ActiveIndicator.swift in Sources */,
 				3325BC9926662ECB00D573CD /* SwiftUI_IntroApp.swift in Sources */,
 				332DBA052666810A00A14699 /* DynamicListIdentifiable.swift in Sources */,
 				3309FCAD266FBD1D000180EB /* UserView.swift in Sources */,
+				3361DBE52670C366000DF571 /* ColoredSymbolView.swift in Sources */,
+				3361DBDC2670BCCD000DF571 /* TabbedRoot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,15 +265,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				332DBA0026667D3700A14699 /* StaticList.swift in Sources */,
+				3361DBE32670C357000DF571 /* TextImageView.swift in Sources */,
 				332DBA0326667F9800A14699 /* DynamicList.swift in Sources */,
 				3309FCB8266FC42A000180EB /* UserID2.swift in Sources */,
 				3309FCB1266FBD2B000180EB /* UserData.swift in Sources */,
 				3309FCB5266FC2AA000180EB /* UserIDCard.swift in Sources */,
+				3361DBE02670BCF6000DF571 /* ColumnRootView.swift in Sources */,
 				3325BC9C26662ECB00D573CD /* ContentView.swift in Sources */,
 				3309FC8E266F7CCE000180EB /* ActiveIndicator.swift in Sources */,
 				3325BC9A26662ECB00D573CD /* SwiftUI_IntroApp.swift in Sources */,
 				332DBA062666810A00A14699 /* DynamicListIdentifiable.swift in Sources */,
 				3309FCAE266FBD1D000180EB /* UserView.swift in Sources */,
+				3361DBE62670C366000DF571 /* ColoredSymbolView.swift in Sources */,
+				3361DBDD2670BCCD000DF571 /* TabbedRoot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +404,7 @@
 				DEVELOPMENT_TEAM = A7SGM6JEMA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,7 +426,7 @@
 				DEVELOPMENT_TEAM = A7SGM6JEMA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,7 +456,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.tectec.SwiftUI-Intro";
 				PRODUCT_NAME = SwiftUI_Intro;
 				SDKROOT = macosx;
@@ -456,7 +480,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.tectec.SwiftUI-Intro";
 				PRODUCT_NAME = SwiftUI_Intro;
 				SDKROOT = macosx;

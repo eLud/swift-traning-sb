@@ -9,15 +9,21 @@ import SwiftUI
 
 struct DynamicList: View {
 
-    let data = ["A", "B", "C", "D", "E"]
-
+    var data = ["hand.thumbsup.circle.fill", "hand.thumbsup.fill", "hand.thumbsdown.fill", "hand.thumbsdown.circle.fill", "rectangle.and.hand.point.up.left.fill"]
+    
     var body: some View {
-        List(data, id: \.self) { element in
-            HStack {
-                Text(element)
-                Spacer()
-                Image(systemName: "creditcard")
+        NavigationView {
+            List(data, id: \.self) { element in
+                NavigationLink(destination:
+                                TextImageView(text: element, symbolName: element)) {
+                    HStack {
+                        Text(element)
+                        Spacer()
+                        Image(systemName: element)
+                    }
+                }
             }
+            .navigationTitle("Dynamic List")
         }
     }
 }

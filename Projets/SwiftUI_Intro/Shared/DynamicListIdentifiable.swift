@@ -12,13 +12,13 @@ struct Card: Identifiable {
     let cardNumber: String
     var active: Bool = false
 
-    var id: String {
-        cardNumber
-    }
-
-//    var id: UUID {
-//        return UUID()
+//    var id: String {
+//        cardNumber
 //    }
+
+    var id: UUID {
+        return UUID()
+    }
 }
 
 struct DynamicListIdentifiable: View {
@@ -38,8 +38,8 @@ struct DynamicListIdentifiable: View {
                 Button("Remove Card") {
                     cards.remove(at: Int.random(in: 0..<cards.count))
                 }
-                Button("Shuffle Cards") {
-                    cards.move(fromOffsets: IndexSet([0]), toOffset: 5)
+                Button("Shuffle Card") {
+                    cards.shuffle()
                 }
             }
             TextField("FirstName", text: $username)
