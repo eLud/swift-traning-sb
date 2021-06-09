@@ -12,19 +12,17 @@ struct DynamicList: View {
     var data = ["hand.thumbsup.circle.fill", "hand.thumbsup.fill", "hand.thumbsdown.fill", "hand.thumbsdown.circle.fill", "rectangle.and.hand.point.up.left.fill"]
     
     var body: some View {
-        NavigationView {
-            List(data, id: \.self) { element in
-                NavigationLink(destination:
-                                TextImageView(text: element, symbolName: element)) {
-                    HStack {
-                        Text(element)
-                        Spacer()
-                        Image(systemName: element)
-                    }
+        List(data, id: \.self) { element in
+            NavigationLink(destination:
+                            TextImageView(text: element, symbolName: element)) {
+                HStack {
+                    Text(element)
+                    Spacer()
+                    Image(systemName: element)
                 }
             }
-            .navigationTitle("Dynamic List")
         }
+        .navigationTitle("Dynamic List")
     }
 }
 

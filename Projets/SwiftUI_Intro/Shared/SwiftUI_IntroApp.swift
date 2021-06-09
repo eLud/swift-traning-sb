@@ -22,5 +22,6 @@ struct SwiftUI_IntroApp: App {
             }
             #endif
         }
+//        .windowToolbarStyle(.unifiedCompact)
     }
 }

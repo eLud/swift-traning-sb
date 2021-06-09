@@ -38,7 +38,6 @@ struct ActiveIndicator: View {
         })
         .buttonStyle(PlainButtonStyle())
         .frame(width: 60, height: 30)
-        .animation(.easeInOut(duration: 0.2))
     }
 }
 

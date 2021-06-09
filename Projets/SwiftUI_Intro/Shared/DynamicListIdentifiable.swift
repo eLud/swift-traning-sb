@@ -33,7 +33,9 @@ struct DynamicListIdentifiable: View {
         VStack {
             HStack {
                 Button("Add Card") {
-                    cards.append(Card(cardNumber: "\(Int.random(in: 0...1000000000000))"))
+                    withAnimation {
+                        cards.append(Card(cardNumber: "\(Int.random(in: 0...1000000000000))"))
+                    }
                 }
                 Button("Remove Card") {
                     cards.remove(at: Int.random(in: 0..<cards.count))
@@ -47,19 +49,15 @@ struct DynamicListIdentifiable: View {
             TextField("FirstName", text: $username)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             Text(username)
-            List {
-                ForEach(0..<cards.count) { index in
-                    HStack {
-                        Text(cards[index].cardNumber)
-                            .foregroundColor(cards[index].active ? Color(.label) : Color(.secondaryLabel))
-                        Spacer()
-                        Toggle("", isOn: $cards[index].active)
-                        ActiveIndicator(isActive: $cards[index].active)
-                    }
+            List($cards) { $card in
+                HStack {
+                    Text(card.cardNumber)
+                        .foregroundColor(card.active ? Color.black : Color.gray)
+                    Spacer()
+                    Toggle("", isOn: $card.active)
+                    ActiveIndicator(isActive: $card.active)
                 }
             }
-            .listStyle(InsetGroupedListStyle())
-            .animation(.easeIn)
         }
     }
 }

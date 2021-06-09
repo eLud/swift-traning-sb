@@ -9,25 +9,28 @@ import SwiftUI
 
 struct ColumnRootView: View {
     
-    @State private var selectedString: String?
+    @State private var defaultView = true
     
     var body: some View {
         NavigationView {
             List {
-                Button("Beer View") {
-                    selectedString = "BeerView"
+                Text("Example views")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                NavigationLink(destination: ContentView(), isActive: $defaultView) {
+                    ContentView.navigationLabel
                 }
-                Button("Static List") {
-                    selectedString = "Static List"
+                NavigationLink(destination: StaticList()) {
+                    Label("Static List", systemImage: "list.bullet.rectangle.portrait")
                 }
-                Text("Dynamic List")
-                Text("Dynamic List with ID")
+                NavigationLink(destination: DynamicList()) {
+                    Label("Dynamic List", systemImage: "list.bullet.circle")
+                }
+                NavigationLink(destination: DynamicListIdentifiable()) {
+                    Label("Dynamic List with ID", systemImage: "list.triangle")
+                }
             }.listStyle(.sidebar)
-            if let string = selectedString {
-                Text(string)
-            } else {
-                Text("Selected something")
-            }
+            Text("Selected something")
             Text("Detail")
         }
     }

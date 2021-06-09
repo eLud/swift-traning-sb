@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    static var navigationLabel: Label<Text, Image> {
+        Label("Too Much", systemImage: "square.bottomhalf.filled")
+    }
 
     var body: some View {
         ZStack {

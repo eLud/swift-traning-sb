@@ -12,20 +12,23 @@ struct TabbedRoot: View {
         TabView {
             ContentView()
                 .tabItem {
-                    Label("Too Much", systemImage: "square.bottomhalf.filled")
+                    ContentView.navigationLabel
                 }
-            StaticList()
-                .tabItem {
-                    Label("Static List", systemImage: "list.bullet.rectangle.portrait")
-                }
-            DynamicList()
-                .tabItem {
-                    Label("Dynamic List", systemImage: "list.bullet.circle")
-                }
-            DynamicListIdentifiable()
-                .tabItem {
-                    Label("Dynamic List Id", systemImage: "list.triangle")
-                }
+            NavigationView {
+                StaticList()
+            }.tabItem {
+                Label("Static List", systemImage: "list.bullet.rectangle.portrait")
+            }
+            NavigationView {
+                DynamicList()
+            }.tabItem {
+                Label("Dynamic List", systemImage: "list.bullet.circle")
+            }
+            NavigationView {
+                DynamicListIdentifiable()
+            }.tabItem {
+                Label("Dynamic List Id", systemImage: "list.triangle")
+            }
         }
     }
 }
