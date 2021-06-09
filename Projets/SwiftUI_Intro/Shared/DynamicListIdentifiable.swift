@@ -16,9 +16,7 @@ struct Card: Identifiable {
 //        cardNumber
 //    }
 
-    var id: UUID {
-        return UUID()
-    }
+    let id: UUID = UUID()
 }
 
 struct DynamicListIdentifiable: View {
@@ -27,7 +25,7 @@ struct DynamicListIdentifiable: View {
     // Var qui participe à l'état de la vue
     // Définit la "source de vérité"
     @State private var cards: [Card] = [Card(cardNumber: "2345678"), Card(cardNumber: "876543")]
-    @State private var username: String = "Ludovic"
+    @AppStorage("username") private var username: String = "Ludovic"
 
     var body: some View {
         VStack {

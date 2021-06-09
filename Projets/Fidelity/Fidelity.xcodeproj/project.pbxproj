@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		3325BCC026665A2C00D573CD /* FidelityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCAD26665A2900D573CD /* FidelityApp.swift */; };
 		3325BCC126665A2C00D573CD /* FidelityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCAD26665A2900D573CD /* FidelityApp.swift */; };
-		3325BCC226665A2C00D573CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCAE26665A2900D573CD /* ContentView.swift */; };
-		3325BCC326665A2C00D573CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCAE26665A2900D573CD /* ContentView.swift */; };
+		3325BCC226665A2C00D573CD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCAE26665A2900D573CD /* CardView.swift */; };
+		3325BCC326665A2C00D573CD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCAE26665A2900D573CD /* CardView.swift */; };
 		3325BCC426665A2C00D573CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3325BCAF26665A2C00D573CD /* Assets.xcassets */; };
 		3325BCC526665A2C00D573CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3325BCAF26665A2C00D573CD /* Assets.xcassets */; };
 		3325BCCF26665B3600D573CD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCCE26665B3600D573CD /* Card.swift */; };
@@ -23,11 +23,13 @@
 		3325BCDA2666725900D573CD /* CardHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCD82666725900D573CD /* CardHeader.swift */; };
 		3325BCDC266672F500D573CD /* CardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCDB266672F500D573CD /* CardList.swift */; };
 		3325BCDD266672F500D573CD /* CardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCDB266672F500D573CD /* CardList.swift */; };
+		3361DBE82670F13F000DF571 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361DBE72670F13F000DF571 /* AppData.swift */; };
+		3361DBE92670F13F000DF571 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361DBE72670F13F000DF571 /* AppData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3325BCAD26665A2900D573CD /* FidelityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FidelityApp.swift; sourceTree = "<group>"; };
-		3325BCAE26665A2900D573CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3325BCAE26665A2900D573CD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3325BCAF26665A2C00D573CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3325BCB426665A2C00D573CD /* Fidelity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fidelity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3325BCB726665A2C00D573CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,6 +41,7 @@
 		3325BCD426665B7400D573CD /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
 		3325BCD82666725900D573CD /* CardHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardHeader.swift; sourceTree = "<group>"; };
 		3325BCDB266672F500D573CD /* CardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardList.swift; sourceTree = "<group>"; };
+		3361DBE72670F13F000DF571 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				3325BCAD26665A2900D573CD /* FidelityApp.swift */,
-				3325BCAE26665A2900D573CD /* ContentView.swift */,
+				3325BCAE26665A2900D573CD /* CardView.swift */,
 				3325BCDB266672F500D573CD /* CardList.swift */,
 				3325BCD82666725900D573CD /* CardHeader.swift */,
 				3325BCD726665D4700D573CD /* Model */,
@@ -111,6 +114,7 @@
 		3325BCD726665D4700D573CD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3361DBE72670F13F000DF571 /* AppData.swift */,
 				3325BCCE26665B3600D573CD /* Card.swift */,
 				3325BCD126665B6B00D573CD /* Shop.swift */,
 				3325BCD426665B7400D573CD /* Brand.swift */,
@@ -215,9 +219,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3325BCC226665A2C00D573CD /* ContentView.swift in Sources */,
+				3325BCC226665A2C00D573CD /* CardView.swift in Sources */,
 				3325BCCF26665B3600D573CD /* Card.swift in Sources */,
 				3325BCD92666725900D573CD /* CardHeader.swift in Sources */,
+				3361DBE82670F13F000DF571 /* AppData.swift in Sources */,
 				3325BCC026665A2C00D573CD /* FidelityApp.swift in Sources */,
 				3325BCD526665B7400D573CD /* Brand.swift in Sources */,
 				3325BCD226665B6B00D573CD /* Shop.swift in Sources */,
@@ -229,9 +234,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3325BCC326665A2C00D573CD /* ContentView.swift in Sources */,
+				3325BCC326665A2C00D573CD /* CardView.swift in Sources */,
 				3325BCD026665B3600D573CD /* Card.swift in Sources */,
 				3325BCDA2666725900D573CD /* CardHeader.swift in Sources */,
+				3361DBE92670F13F000DF571 /* AppData.swift in Sources */,
 				3325BCC126665A2C00D573CD /* FidelityApp.swift in Sources */,
 				3325BCD626665B7400D573CD /* Brand.swift in Sources */,
 				3325BCD326665B6B00D573CD /* Shop.swift in Sources */,
@@ -362,7 +368,7 @@
 				DEVELOPMENT_TEAM = A7SGM6JEMA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -384,7 +390,7 @@
 				DEVELOPMENT_TEAM = A7SGM6JEMA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

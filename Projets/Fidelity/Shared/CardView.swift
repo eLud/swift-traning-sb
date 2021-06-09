@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CardView.swift
 //  Shared
 //
 //  Created by Ludovic Ollagnier on 01/06/2021.
@@ -8,7 +8,7 @@
 import SwiftUI
 import MapKit
 
-struct ContentView: View {
+struct CardView: View {
 
     let card: Card
 
@@ -39,8 +39,8 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
 
         Group {
-            ContentView(card: Card.demoCard)
-            ContentView(card: Card.demoCardWithoutShop)
+            CardView(card: Card.demoCard)
+            CardView(card: Card.demoCardWithoutShop)
                 .preferredColorScheme(.dark)
         }
     }

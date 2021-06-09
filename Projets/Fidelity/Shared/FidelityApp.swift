@@ -9,10 +9,23 @@ import SwiftUI
 
 @main
 struct FidelityApp: App {
-
+    
+    @StateObject private var appData = AppData()
+    
     var body: some Scene {
         WindowGroup {
-            CardList()
+            TabView {
+                NavigationView {
+                    CardList()
+                }
+                .tabItem {
+                    Label("Fidelity Cards", systemImage: "giftcard.fill")
+                }
+                Text("This will be settings")
+                    .tabItem {
+                        Label("Settings", systemImage: "gearshape.fill")
+                    }
+            }.environmentObject(appData)
         }
     }
 }

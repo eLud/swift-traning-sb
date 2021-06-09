@@ -16,13 +16,16 @@ import Foundation
 // - Est carte de paiement?
 // - Solde de points (si utile)
 
-struct Card {
+struct Card: Identifiable {
     let cardNumber: String
     let originBrand: Brand
     let ownerName: String
     var validityDate: Date?
     var isPayment: Bool
     var pointsAvailable: Int
+    var isFavorite: Bool = Bool.random()
+    
+    let id: UUID = UUID()
     
     // Computed property get-only
     var isValid: Bool {
