@@ -10,6 +10,8 @@ import SwiftUI
 struct UserView: View {
 
     // Comme @State mais pour objets
+    // Défini la source de vérité
+    // UserView "possède" la vérité
     @StateObject var user = UserData()
 
     var body: some View {

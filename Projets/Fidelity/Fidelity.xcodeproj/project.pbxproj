@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		331CD198267206B9003DD7E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 331CD197267206B9003DD7E5 /* Assets.xcassets */; };
+		331CD19E267206B9003DD7E5 /* FidelityWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 331CD19D267206B9003DD7E5 /* FidelityWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		331CD1A3267206B9003DD7E5 /* FidelityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1A2267206B9003DD7E5 /* FidelityApp.swift */; };
+		331CD1A5267206B9003DD7E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1A4267206B9003DD7E5 /* ContentView.swift */; };
+		331CD1A7267206B9003DD7E5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1A6267206B9003DD7E5 /* NotificationController.swift */; };
+		331CD1A9267206B9003DD7E5 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1A8267206B9003DD7E5 /* NotificationView.swift */; };
+		331CD1AB267206B9003DD7E5 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1AA267206B9003DD7E5 /* ComplicationController.swift */; };
+		331CD1AD267206BA003DD7E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 331CD1AC267206BA003DD7E5 /* Assets.xcassets */; };
+		331CD1B0267206BA003DD7E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 331CD1AF267206BA003DD7E5 /* Preview Assets.xcassets */; };
+		331CD1BC267206BA003DD7E5 /* FidelityWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1BB267206BA003DD7E5 /* FidelityWatchTests.swift */; };
+		331CD1C6267206BB003DD7E5 /* FidelityWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1C5267206BB003DD7E5 /* FidelityWatchUITests.swift */; };
+		331CD1C9267206BB003DD7E5 /* FidelityWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 331CD195267206B8003DD7E5 /* FidelityWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		331CD1D8267206F0003DD7E5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCAE26665A2900D573CD /* CardView.swift */; };
+		331CD1D9267206F3003DD7E5 /* CardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCDB266672F500D573CD /* CardList.swift */; };
+		331CD1DA267206F6003DD7E5 /* CardHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCD82666725900D573CD /* CardHeader.swift */; };
+		331CD1DB26720710003DD7E5 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCD426665B7400D573CD /* Brand.swift */; };
+		331CD1DC26720710003DD7E5 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCD126665B6B00D573CD /* Shop.swift */; };
+		331CD1DD26720710003DD7E5 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361DBE72670F13F000DF571 /* AppData.swift */; };
+		331CD1DE26720710003DD7E5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCCE26665B3600D573CD /* Card.swift */; };
+		331CD1DF26720714003DD7E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3325BCAF26665A2C00D573CD /* Assets.xcassets */; };
 		3325BCC026665A2C00D573CD /* FidelityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCAD26665A2900D573CD /* FidelityApp.swift */; };
 		3325BCC126665A2C00D573CD /* FidelityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCAD26665A2900D573CD /* FidelityApp.swift */; };
 		3325BCC226665A2C00D573CD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCAE26665A2900D573CD /* CardView.swift */; };
@@ -27,7 +47,79 @@
 		3361DBE92670F13F000DF571 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361DBE72670F13F000DF571 /* AppData.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		331CD19F267206B9003DD7E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3325BCA826665A2900D573CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 331CD19C267206B9003DD7E5;
+			remoteInfo = "FidelityWatch Extension";
+		};
+		331CD1B8267206BA003DD7E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3325BCA826665A2900D573CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 331CD19C267206B9003DD7E5;
+			remoteInfo = "FidelityWatch Extension";
+		};
+		331CD1C2267206BB003DD7E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3325BCA826665A2900D573CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 331CD194267206B8003DD7E5;
+			remoteInfo = FidelityWatch;
+		};
+		331CD1C7267206BB003DD7E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3325BCA826665A2900D573CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 331CD194267206B8003DD7E5;
+			remoteInfo = FidelityWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		331CD1CA267206BB003DD7E5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				331CD1C9267206BB003DD7E5 /* FidelityWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		331CD1CD267206BB003DD7E5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				331CD19E267206B9003DD7E5 /* FidelityWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		331CD195267206B8003DD7E5 /* FidelityWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FidelityWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		331CD197267206B9003DD7E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		331CD19D267206B9003DD7E5 /* FidelityWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FidelityWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		331CD1A2267206B9003DD7E5 /* FidelityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FidelityApp.swift; sourceTree = "<group>"; };
+		331CD1A4267206B9003DD7E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		331CD1A6267206B9003DD7E5 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		331CD1A8267206B9003DD7E5 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		331CD1AA267206B9003DD7E5 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		331CD1AC267206BA003DD7E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		331CD1AF267206BA003DD7E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		331CD1B1267206BA003DD7E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		331CD1B2267206BA003DD7E5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		331CD1B7267206BA003DD7E5 /* FidelityWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FidelityWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		331CD1BB267206BA003DD7E5 /* FidelityWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FidelityWatchTests.swift; sourceTree = "<group>"; };
+		331CD1C1267206BA003DD7E5 /* FidelityWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FidelityWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		331CD1C5267206BB003DD7E5 /* FidelityWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FidelityWatchUITests.swift; sourceTree = "<group>"; };
 		3325BCAD26665A2900D573CD /* FidelityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FidelityApp.swift; sourceTree = "<group>"; };
 		3325BCAE26665A2900D573CD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3325BCAF26665A2C00D573CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +137,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		331CD19A267206B9003DD7E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		331CD1B4267206BA003DD7E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		331CD1BE267206BA003DD7E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3325BCB126665A2C00D573CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -62,12 +175,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		331CD196267206B8003DD7E5 /* FidelityWatch */ = {
+			isa = PBXGroup;
+			children = (
+				331CD197267206B9003DD7E5 /* Assets.xcassets */,
+			);
+			path = FidelityWatch;
+			sourceTree = "<group>";
+		};
+		331CD1A1267206B9003DD7E5 /* FidelityWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				331CD1A2267206B9003DD7E5 /* FidelityApp.swift */,
+				331CD1A4267206B9003DD7E5 /* ContentView.swift */,
+				331CD1A6267206B9003DD7E5 /* NotificationController.swift */,
+				331CD1A8267206B9003DD7E5 /* NotificationView.swift */,
+				331CD1AA267206B9003DD7E5 /* ComplicationController.swift */,
+				331CD1AC267206BA003DD7E5 /* Assets.xcassets */,
+				331CD1B1267206BA003DD7E5 /* Info.plist */,
+				331CD1B2267206BA003DD7E5 /* PushNotificationPayload.apns */,
+				331CD1AE267206BA003DD7E5 /* Preview Content */,
+			);
+			path = "FidelityWatch Extension";
+			sourceTree = "<group>";
+		};
+		331CD1AE267206BA003DD7E5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				331CD1AF267206BA003DD7E5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		331CD1BA267206BA003DD7E5 /* FidelityWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				331CD1BB267206BA003DD7E5 /* FidelityWatchTests.swift */,
+			);
+			path = FidelityWatchTests;
+			sourceTree = "<group>";
+		};
+		331CD1C4267206BB003DD7E5 /* FidelityWatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				331CD1C5267206BB003DD7E5 /* FidelityWatchUITests.swift */,
+			);
+			path = FidelityWatchUITests;
+			sourceTree = "<group>";
+		};
 		3325BCA726665A2900D573CD = {
 			isa = PBXGroup;
 			children = (
 				3325BCAC26665A2900D573CD /* Shared */,
 				3325BCB626665A2C00D573CD /* iOS */,
 				3325BCBD26665A2C00D573CD /* macOS */,
+				331CD196267206B8003DD7E5 /* FidelityWatch */,
+				331CD1A1267206B9003DD7E5 /* FidelityWatch Extension */,
+				331CD1BA267206BA003DD7E5 /* FidelityWatchTests */,
+				331CD1C4267206BB003DD7E5 /* FidelityWatchUITests */,
 				3325BCB526665A2C00D573CD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +255,10 @@
 			children = (
 				3325BCB426665A2C00D573CD /* Fidelity.app */,
 				3325BCBC26665A2C00D573CD /* Fidelity.app */,
+				331CD195267206B8003DD7E5 /* FidelityWatch.app */,
+				331CD19D267206B9003DD7E5 /* FidelityWatch Extension.appex */,
+				331CD1B7267206BA003DD7E5 /* FidelityWatchTests.xctest */,
+				331CD1C1267206BA003DD7E5 /* FidelityWatchUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +294,76 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		331CD194267206B8003DD7E5 /* FidelityWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 331CD1D5267206BB003DD7E5 /* Build configuration list for PBXNativeTarget "FidelityWatch" */;
+			buildPhases = (
+				331CD193267206B8003DD7E5 /* Resources */,
+				331CD1CD267206BB003DD7E5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				331CD1A0267206B9003DD7E5 /* PBXTargetDependency */,
+			);
+			name = FidelityWatch;
+			productName = FidelityWatch;
+			productReference = 331CD195267206B8003DD7E5 /* FidelityWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		331CD19C267206B9003DD7E5 /* FidelityWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 331CD1D4267206BB003DD7E5 /* Build configuration list for PBXNativeTarget "FidelityWatch Extension" */;
+			buildPhases = (
+				331CD199267206B9003DD7E5 /* Sources */,
+				331CD19A267206B9003DD7E5 /* Frameworks */,
+				331CD19B267206B9003DD7E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FidelityWatch Extension";
+			productName = "FidelityWatch Extension";
+			productReference = 331CD19D267206B9003DD7E5 /* FidelityWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		331CD1B6267206BA003DD7E5 /* FidelityWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 331CD1D6267206BB003DD7E5 /* Build configuration list for PBXNativeTarget "FidelityWatchTests" */;
+			buildPhases = (
+				331CD1B3267206BA003DD7E5 /* Sources */,
+				331CD1B4267206BA003DD7E5 /* Frameworks */,
+				331CD1B5267206BA003DD7E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				331CD1B9267206BA003DD7E5 /* PBXTargetDependency */,
+			);
+			name = FidelityWatchTests;
+			productName = FidelityWatchTests;
+			productReference = 331CD1B7267206BA003DD7E5 /* FidelityWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		331CD1C0267206BA003DD7E5 /* FidelityWatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 331CD1D7267206BB003DD7E5 /* Build configuration list for PBXNativeTarget "FidelityWatchUITests" */;
+			buildPhases = (
+				331CD1BD267206BA003DD7E5 /* Sources */,
+				331CD1BE267206BA003DD7E5 /* Frameworks */,
+				331CD1BF267206BA003DD7E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				331CD1C3267206BB003DD7E5 /* PBXTargetDependency */,
+			);
+			name = FidelityWatchUITests;
+			productName = FidelityWatchUITests;
+			productReference = 331CD1C1267206BA003DD7E5 /* FidelityWatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		3325BCB326665A2C00D573CD /* Fidelity (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3325BCC826665A2C00D573CD /* Build configuration list for PBXNativeTarget "Fidelity (iOS)" */;
@@ -132,10 +371,12 @@
 				3325BCB026665A2C00D573CD /* Sources */,
 				3325BCB126665A2C00D573CD /* Frameworks */,
 				3325BCB226665A2C00D573CD /* Resources */,
+				331CD1CA267206BB003DD7E5 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				331CD1C8267206BB003DD7E5 /* PBXTargetDependency */,
 			);
 			name = "Fidelity (iOS)";
 			productName = "Fidelity (iOS)";
@@ -165,9 +406,23 @@
 		3325BCA826665A2900D573CD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					331CD194267206B8003DD7E5 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					331CD19C267206B9003DD7E5 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					331CD1B6267206BA003DD7E5 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 331CD19C267206B9003DD7E5;
+					};
+					331CD1C0267206BA003DD7E5 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 331CD194267206B8003DD7E5;
+					};
 					3325BCB326665A2C00D573CD = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -191,11 +446,47 @@
 			targets = (
 				3325BCB326665A2C00D573CD /* Fidelity (iOS) */,
 				3325BCBB26665A2C00D573CD /* Fidelity (macOS) */,
+				331CD194267206B8003DD7E5 /* FidelityWatch */,
+				331CD19C267206B9003DD7E5 /* FidelityWatch Extension */,
+				331CD1B6267206BA003DD7E5 /* FidelityWatchTests */,
+				331CD1C0267206BA003DD7E5 /* FidelityWatchUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		331CD193267206B8003DD7E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				331CD198267206B9003DD7E5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		331CD19B267206B9003DD7E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				331CD1B0267206BA003DD7E5 /* Preview Assets.xcassets in Resources */,
+				331CD1DF26720714003DD7E5 /* Assets.xcassets in Resources */,
+				331CD1AD267206BA003DD7E5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		331CD1B5267206BA003DD7E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		331CD1BF267206BA003DD7E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3325BCB226665A2C00D573CD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,6 +506,41 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		331CD199267206B9003DD7E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				331CD1A7267206B9003DD7E5 /* NotificationController.swift in Sources */,
+				331CD1DB26720710003DD7E5 /* Brand.swift in Sources */,
+				331CD1A5267206B9003DD7E5 /* ContentView.swift in Sources */,
+				331CD1DC26720710003DD7E5 /* Shop.swift in Sources */,
+				331CD1DD26720710003DD7E5 /* AppData.swift in Sources */,
+				331CD1AB267206B9003DD7E5 /* ComplicationController.swift in Sources */,
+				331CD1A3267206B9003DD7E5 /* FidelityApp.swift in Sources */,
+				331CD1DE26720710003DD7E5 /* Card.swift in Sources */,
+				331CD1D8267206F0003DD7E5 /* CardView.swift in Sources */,
+				331CD1A9267206B9003DD7E5 /* NotificationView.swift in Sources */,
+				331CD1DA267206F6003DD7E5 /* CardHeader.swift in Sources */,
+				331CD1D9267206F3003DD7E5 /* CardList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		331CD1B3267206BA003DD7E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				331CD1BC267206BA003DD7E5 /* FidelityWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		331CD1BD267206BA003DD7E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				331CD1C6267206BB003DD7E5 /* FidelityWatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3325BCB026665A2C00D573CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -247,7 +573,242 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		331CD1A0267206B9003DD7E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 331CD19C267206B9003DD7E5 /* FidelityWatch Extension */;
+			targetProxy = 331CD19F267206B9003DD7E5 /* PBXContainerItemProxy */;
+		};
+		331CD1B9267206BA003DD7E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 331CD19C267206B9003DD7E5 /* FidelityWatch Extension */;
+			targetProxy = 331CD1B8267206BA003DD7E5 /* PBXContainerItemProxy */;
+		};
+		331CD1C3267206BB003DD7E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 331CD194267206B8003DD7E5 /* FidelityWatch */;
+			targetProxy = 331CD1C2267206BB003DD7E5 /* PBXContainerItemProxy */;
+		};
+		331CD1C8267206BB003DD7E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 331CD194267206B8003DD7E5 /* FidelityWatch */;
+			targetProxy = 331CD1C7267206BB003DD7E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		331CD1CB267206BB003DD7E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = FidelityWatch_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = FidelityWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = fr.tectec.Fidelity;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.Fidelity.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		331CD1CC267206BB003DD7E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = FidelityWatch_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = FidelityWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = fr.tectec.Fidelity;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.Fidelity.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		331CD1CE267206BB003DD7E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FidelityWatch Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FidelityWatch Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "FidelityWatch Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.Fidelity.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		331CD1CF267206BB003DD7E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FidelityWatch Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FidelityWatch Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "FidelityWatch Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.Fidelity.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		331CD1D0267206BB003DD7E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.Fidelity.FidelityWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FidelityWatch Extension.appex/FidelityWatch Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		331CD1D1267206BB003DD7E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.Fidelity.FidelityWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FidelityWatch Extension.appex/FidelityWatch Extension";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		331CD1D2267206BB003DD7E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.Fidelity.FidelityWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = FidelityWatch;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		331CD1D3267206BB003DD7E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.Fidelity.FidelityWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = FidelityWatch;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
 		3325BCC626665A2C00D573CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -455,6 +1016,42 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		331CD1D4267206BB003DD7E5 /* Build configuration list for PBXNativeTarget "FidelityWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				331CD1CE267206BB003DD7E5 /* Debug */,
+				331CD1CF267206BB003DD7E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		331CD1D5267206BB003DD7E5 /* Build configuration list for PBXNativeTarget "FidelityWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				331CD1CB267206BB003DD7E5 /* Debug */,
+				331CD1CC267206BB003DD7E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		331CD1D6267206BB003DD7E5 /* Build configuration list for PBXNativeTarget "FidelityWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				331CD1D0267206BB003DD7E5 /* Debug */,
+				331CD1D1267206BB003DD7E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		331CD1D7267206BB003DD7E5 /* Build configuration list for PBXNativeTarget "FidelityWatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				331CD1D2267206BB003DD7E5 /* Debug */,
+				331CD1D3267206BB003DD7E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3325BCAB26665A2900D573CD /* Build configuration list for PBXProject "Fidelity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

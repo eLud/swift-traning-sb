@@ -31,7 +31,9 @@ struct CardList: View {
             if let selectedCard = selectedCard {
                 Group {
                     Rectangle()
+                    #if !os(watchOS)
                         .foregroundStyle(Material.ultraThin)
+                    #endif
                         .edgesIgnoringSafeArea(.all)
                     VStack {
                         Text("Dismiss")

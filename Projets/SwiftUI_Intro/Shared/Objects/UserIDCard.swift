@@ -10,6 +10,9 @@ import SwiftUI
 struct UserIDCard: View {
 
     // Comme @Binding pour les objets
+    // Utilise une source de vérité "tierce" passée en paramètre
+    // UserIDCard "ne possède pas" la vérité
+    // UserIDCard(user: laSourceDeVérité)
     @ObservedObject var user: UserData
 
     var body: some View {
@@ -17,6 +20,7 @@ struct UserIDCard: View {
             Text(user.name)
             Text("\(user.age)")
             Text(user.job)
+            Toggle("Is French", isOn: $user.isFrench)
         }
         .padding()
         .background(Color.yellow)
