@@ -27,6 +27,15 @@
 		331CD1DD26720710003DD7E5 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361DBE72670F13F000DF571 /* AppData.swift */; };
 		331CD1DE26720710003DD7E5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCCE26665B3600D573CD /* Card.swift */; };
 		331CD1DF26720714003DD7E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3325BCAF26665A2C00D573CD /* Assets.xcassets */; };
+		331CD1E726723C06003DD7E5 /* SimpleCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1E626723C06003DD7E5 /* SimpleCardList.swift */; };
+		331CD1E826723C06003DD7E5 /* SimpleCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1E626723C06003DD7E5 /* SimpleCardList.swift */; };
+		331CD1E926723C06003DD7E5 /* SimpleCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1E626723C06003DD7E5 /* SimpleCardList.swift */; };
+		331CD1EC26724455003DD7E5 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1EB26724455003DD7E5 /* Color+Extensions.swift */; };
+		331CD1ED26724455003DD7E5 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1EB26724455003DD7E5 /* Color+Extensions.swift */; };
+		331CD1EE26724455003DD7E5 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1EB26724455003DD7E5 /* Color+Extensions.swift */; };
+		331CD1F026724627003DD7E5 /* HeaderToCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1EF26724627003DD7E5 /* HeaderToCardView.swift */; };
+		331CD1F126724627003DD7E5 /* HeaderToCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1EF26724627003DD7E5 /* HeaderToCardView.swift */; };
+		331CD1F226724627003DD7E5 /* HeaderToCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1EF26724627003DD7E5 /* HeaderToCardView.swift */; };
 		3325BCC026665A2C00D573CD /* FidelityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCAD26665A2900D573CD /* FidelityApp.swift */; };
 		3325BCC126665A2C00D573CD /* FidelityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCAD26665A2900D573CD /* FidelityApp.swift */; };
 		3325BCC226665A2C00D573CD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCAE26665A2900D573CD /* CardView.swift */; };
@@ -120,6 +129,9 @@
 		331CD1BB267206BA003DD7E5 /* FidelityWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FidelityWatchTests.swift; sourceTree = "<group>"; };
 		331CD1C1267206BA003DD7E5 /* FidelityWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FidelityWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		331CD1C5267206BB003DD7E5 /* FidelityWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FidelityWatchUITests.swift; sourceTree = "<group>"; };
+		331CD1E626723C06003DD7E5 /* SimpleCardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCardList.swift; sourceTree = "<group>"; };
+		331CD1EB26724455003DD7E5 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		331CD1EF26724627003DD7E5 /* HeaderToCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderToCardView.swift; sourceTree = "<group>"; };
 		3325BCAD26665A2900D573CD /* FidelityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FidelityApp.swift; sourceTree = "<group>"; };
 		3325BCAE26665A2900D573CD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3325BCAF26665A2C00D573CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -223,6 +235,14 @@
 			path = FidelityWatchUITests;
 			sourceTree = "<group>";
 		};
+		331CD1EA26724434003DD7E5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				331CD1EB26724455003DD7E5 /* Color+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		3325BCA726665A2900D573CD = {
 			isa = PBXGroup;
 			children = (
@@ -240,10 +260,13 @@
 		3325BCAC26665A2900D573CD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				331CD1EA26724434003DD7E5 /* Extensions */,
 				3325BCAD26665A2900D573CD /* FidelityApp.swift */,
 				3325BCAE26665A2900D573CD /* CardView.swift */,
 				3325BCDB266672F500D573CD /* CardList.swift */,
+				331CD1E626723C06003DD7E5 /* SimpleCardList.swift */,
 				3325BCD82666725900D573CD /* CardHeader.swift */,
+				331CD1EF26724627003DD7E5 /* HeaderToCardView.swift */,
 				3325BCD726665D4700D573CD /* Model */,
 				3325BCAF26665A2C00D573CD /* Assets.xcassets */,
 			);
@@ -514,12 +537,15 @@
 				331CD1DB26720710003DD7E5 /* Brand.swift in Sources */,
 				331CD1A5267206B9003DD7E5 /* ContentView.swift in Sources */,
 				331CD1DC26720710003DD7E5 /* Shop.swift in Sources */,
+				331CD1F226724627003DD7E5 /* HeaderToCardView.swift in Sources */,
 				331CD1DD26720710003DD7E5 /* AppData.swift in Sources */,
 				331CD1AB267206B9003DD7E5 /* ComplicationController.swift in Sources */,
 				331CD1A3267206B9003DD7E5 /* FidelityApp.swift in Sources */,
 				331CD1DE26720710003DD7E5 /* Card.swift in Sources */,
+				331CD1E926723C06003DD7E5 /* SimpleCardList.swift in Sources */,
 				331CD1D8267206F0003DD7E5 /* CardView.swift in Sources */,
 				331CD1A9267206B9003DD7E5 /* NotificationView.swift in Sources */,
+				331CD1EE26724455003DD7E5 /* Color+Extensions.swift in Sources */,
 				331CD1DA267206F6003DD7E5 /* CardHeader.swift in Sources */,
 				331CD1D9267206F3003DD7E5 /* CardList.swift in Sources */,
 			);
@@ -549,6 +575,9 @@
 				3325BCCF26665B3600D573CD /* Card.swift in Sources */,
 				3325BCD92666725900D573CD /* CardHeader.swift in Sources */,
 				3361DBE82670F13F000DF571 /* AppData.swift in Sources */,
+				331CD1F026724627003DD7E5 /* HeaderToCardView.swift in Sources */,
+				331CD1E726723C06003DD7E5 /* SimpleCardList.swift in Sources */,
+				331CD1EC26724455003DD7E5 /* Color+Extensions.swift in Sources */,
 				3325BCC026665A2C00D573CD /* FidelityApp.swift in Sources */,
 				3325BCD526665B7400D573CD /* Brand.swift in Sources */,
 				3325BCD226665B6B00D573CD /* Shop.swift in Sources */,
@@ -564,6 +593,9 @@
 				3325BCD026665B3600D573CD /* Card.swift in Sources */,
 				3325BCDA2666725900D573CD /* CardHeader.swift in Sources */,
 				3361DBE92670F13F000DF571 /* AppData.swift in Sources */,
+				331CD1F126724627003DD7E5 /* HeaderToCardView.swift in Sources */,
+				331CD1E826723C06003DD7E5 /* SimpleCardList.swift in Sources */,
+				331CD1ED26724455003DD7E5 /* Color+Extensions.swift in Sources */,
 				3325BCC126665A2C00D573CD /* FidelityApp.swift in Sources */,
 				3325BCD626665B7400D573CD /* Brand.swift in Sources */,
 				3325BCD326665B6B00D573CD /* Shop.swift in Sources */,

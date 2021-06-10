@@ -21,6 +21,17 @@ struct FidelityApp: App {
                 .tabItem {
                     Label("Fidelity Cards", systemImage: "giftcard.fill")
                 }
+                NavigationView {
+                    SimpleCardList()
+                }
+                .tabItem {
+                    Label("Simple Cards", systemImage: "creditcard.fill")
+                }
+                HeaderToCardView()
+                    .tabItem {
+                        Label("Header To Card", systemImage: "creditcard.fill")
+                    }
+            
                 Text("This will be settings")
                     .tabItem {
                         Label("Settings", systemImage: "gearshape.fill")

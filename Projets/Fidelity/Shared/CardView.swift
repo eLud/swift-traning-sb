@@ -12,6 +12,9 @@ struct CardView: View {
 
     let card: Card
 
+    @State private var cardColor = Color("fnacColor")
+    @State private var radius = 10.0
+
     var body: some View {
         VStack {
             CardHeader(card: card)
@@ -27,9 +30,15 @@ struct CardView: View {
                 Text(card.cardNumber)
             }
         }
+        .onLongPressGesture {
+            withAnimation {
+                cardColor = Color.random
+                radius = Double.random(in: 0.0...50.0)
+            }
+        }
         .padding()
-        .background(Color("fnacColor"))
-        .cornerRadius(10)
+        .background(cardColor)
+        .cornerRadius(radius)
         .shadow(radius: 10)
         .padding()
     }

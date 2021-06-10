@@ -32,6 +32,13 @@ struct TabbedRoot: View {
             UserView().tabItem {
                 Label("User View", systemImage: "person.circle.fill")
             }
+            MatchedEffect().tabItem {
+                Label("Matched effect", systemImage: "person.circle.fill")
+            }
+            AnimatedChange()
+                .tabItem {
+                    Text("Animated Change")
+                }
         }
     }
 }

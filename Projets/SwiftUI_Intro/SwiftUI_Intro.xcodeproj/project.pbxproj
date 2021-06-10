@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,12 @@
 		3309FCB5266FC2AA000180EB /* UserIDCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3309FCB3266FC2AA000180EB /* UserIDCard.swift */; };
 		3309FCB7266FC42A000180EB /* UserID2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3309FCB6266FC42A000180EB /* UserID2.swift */; };
 		3309FCB8266FC42A000180EB /* UserID2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3309FCB6266FC42A000180EB /* UserID2.swift */; };
+		331CD1E2267227E7003DD7E5 /* CoreGPX in Frameworks */ = {isa = PBXBuildFile; productRef = 331CD1E1267227E7003DD7E5 /* CoreGPX */; };
+		331CD1E5267227F8003DD7E5 /* CoreGPX in Frameworks */ = {isa = PBXBuildFile; productRef = 331CD1E4267227F8003DD7E5 /* CoreGPX */; };
+		331CD1F426724AF4003DD7E5 /* MatchedEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1F326724AF4003DD7E5 /* MatchedEffect.swift */; };
+		331CD1F526724AF4003DD7E5 /* MatchedEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1F326724AF4003DD7E5 /* MatchedEffect.swift */; };
+		331CD1F726724D42003DD7E5 /* AnimatedChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1F626724D42003DD7E5 /* AnimatedChange.swift */; };
+		331CD1F826724D42003DD7E5 /* AnimatedChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1F626724D42003DD7E5 /* AnimatedChange.swift */; };
 		3325BC9926662ECB00D573CD /* SwiftUI_IntroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BC8626662EC800D573CD /* SwiftUI_IntroApp.swift */; };
 		3325BC9A26662ECB00D573CD /* SwiftUI_IntroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BC8626662EC800D573CD /* SwiftUI_IntroApp.swift */; };
 		3325BC9B26662ECB00D573CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BC8726662EC800D573CD /* ContentView.swift */; };
@@ -45,6 +51,8 @@
 		3309FCAF266FBD2B000180EB /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		3309FCB3266FC2AA000180EB /* UserIDCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIDCard.swift; sourceTree = "<group>"; };
 		3309FCB6266FC42A000180EB /* UserID2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserID2.swift; sourceTree = "<group>"; };
+		331CD1F326724AF4003DD7E5 /* MatchedEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedEffect.swift; sourceTree = "<group>"; };
+		331CD1F626724D42003DD7E5 /* AnimatedChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedChange.swift; sourceTree = "<group>"; };
 		3325BC8626662EC800D573CD /* SwiftUI_IntroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_IntroApp.swift; sourceTree = "<group>"; };
 		3325BC8726662EC800D573CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3325BC8826662ECA00D573CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				331CD1E2267227E7003DD7E5 /* CoreGPX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				331CD1E5267227F8003DD7E5 /* CoreGPX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +101,13 @@
 			path = Objects;
 			sourceTree = "<group>";
 		};
+		331CD1E3267227F8003DD7E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3325BC8026662EC800D573CD = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +115,7 @@
 				3325BC8F26662ECA00D573CD /* iOS */,
 				3325BC9626662ECB00D573CD /* macOS */,
 				3325BC8E26662ECA00D573CD /* Products */,
+				331CD1E3267227F8003DD7E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +129,8 @@
 				332DB9FE26667D3700A14699 /* StaticList.swift */,
 				332DBA0126667F9800A14699 /* DynamicList.swift */,
 				3361DBE12670C357000DF571 /* TextImageView.swift */,
+				331CD1F326724AF4003DD7E5 /* MatchedEffect.swift */,
+				331CD1F626724D42003DD7E5 /* AnimatedChange.swift */,
 				3361DBE42670C366000DF571 /* ColoredSymbolView.swift */,
 				332DBA042666810A00A14699 /* DynamicListIdentifiable.swift */,
 				3309FCB2266FBD31000180EB /* Objects */,
@@ -162,6 +182,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI_Intro (iOS)";
+			packageProductDependencies = (
+				331CD1E1267227E7003DD7E5 /* CoreGPX */,
+			);
 			productName = "SwiftUI_Intro (iOS)";
 			productReference = 3325BC8D26662ECA00D573CD /* SwiftUI_Intro.app */;
 			productType = "com.apple.product-type.application";
@@ -179,6 +202,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI_Intro (macOS)";
+			packageProductDependencies = (
+				331CD1E4267227F8003DD7E5 /* CoreGPX */,
+			);
 			productName = "SwiftUI_Intro (macOS)";
 			productReference = 3325BC9526662ECB00D573CD /* SwiftUI_Intro.app */;
 			productType = "com.apple.product-type.application";
@@ -209,6 +235,9 @@
 				Base,
 			);
 			mainGroup = 3325BC8026662EC800D573CD;
+			packageReferences = (
+				331CD1E0267227E7003DD7E5 /* XCRemoteSwiftPackageReference "CoreGPX" */,
+			);
 			productRefGroup = 3325BC8E26662ECA00D573CD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -247,9 +276,11 @@
 				3361DBE22670C357000DF571 /* TextImageView.swift in Sources */,
 				332DBA0226667F9800A14699 /* DynamicList.swift in Sources */,
 				3309FCB7266FC42A000180EB /* UserID2.swift in Sources */,
+				331CD1F426724AF4003DD7E5 /* MatchedEffect.swift in Sources */,
 				3309FCB0266FBD2B000180EB /* UserData.swift in Sources */,
 				3309FCB4266FC2AA000180EB /* UserIDCard.swift in Sources */,
 				3361DBDF2670BCF6000DF571 /* ColumnRootView.swift in Sources */,
+				331CD1F726724D42003DD7E5 /* AnimatedChange.swift in Sources */,
 				3325BC9B26662ECB00D573CD /* ContentView.swift in Sources */,
 				3309FC8D266F7CCE000180EB /* ActiveIndicator.swift in Sources */,
 				3325BC9926662ECB00D573CD /* SwiftUI_IntroApp.swift in Sources */,
@@ -268,9 +299,11 @@
 				3361DBE32670C357000DF571 /* TextImageView.swift in Sources */,
 				332DBA0326667F9800A14699 /* DynamicList.swift in Sources */,
 				3309FCB8266FC42A000180EB /* UserID2.swift in Sources */,
+				331CD1F526724AF4003DD7E5 /* MatchedEffect.swift in Sources */,
 				3309FCB1266FBD2B000180EB /* UserData.swift in Sources */,
 				3309FCB5266FC2AA000180EB /* UserIDCard.swift in Sources */,
 				3361DBE02670BCF6000DF571 /* ColumnRootView.swift in Sources */,
+				331CD1F826724D42003DD7E5 /* AnimatedChange.swift in Sources */,
 				3325BC9C26662ECB00D573CD /* ContentView.swift in Sources */,
 				3309FC8E266F7CCE000180EB /* ActiveIndicator.swift in Sources */,
 				3325BC9A26662ECB00D573CD /* SwiftUI_IntroApp.swift in Sources */,
@@ -519,6 +552,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		331CD1E0267227E7003DD7E5 /* XCRemoteSwiftPackageReference "CoreGPX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vincentneo/CoreGPX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		331CD1E1267227E7003DD7E5 /* CoreGPX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 331CD1E0267227E7003DD7E5 /* XCRemoteSwiftPackageReference "CoreGPX" */;
+			productName = CoreGPX;
+		};
+		331CD1E4267227F8003DD7E5 /* CoreGPX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 331CD1E0267227E7003DD7E5 /* XCRemoteSwiftPackageReference "CoreGPX" */;
+			productName = CoreGPX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3325BC8126662EC800D573CD /* Project object */;
 }

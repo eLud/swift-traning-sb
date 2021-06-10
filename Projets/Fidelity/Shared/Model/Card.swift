@@ -47,13 +47,13 @@ struct Card: Identifiable {
     }
 
     static var demoCard: Card {
-        let fnac = Brand(name: "Fnac")
+        let fnac = Brand(name: "Darty")
         let shop = Shop(brand: fnac, location: (48.911853, 2.033865), adress: "Chambourcy")
 
         fnac.addShop(shop: shop)
         fnac.favoriteShop = shop
 
-        return Card(cardNumber: "087652345678", originBrand: fnac, ownerName: "Ludovic Ollagnier", validityDate: Date())
+        return Card(cardNumber: "123456789", originBrand: fnac, ownerName: "Ludovic Ollagnier", validityDate: Date())
     }
 
     static var demoCardWithoutShop: Card {
