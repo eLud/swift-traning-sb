@@ -16,17 +16,20 @@ struct UserView: View {
 
     var body: some View {
         VStack {
-            Text(user.name)
-            Text("\(user.age)")
-            Text(user.job)
+            Group {
+                Text(user.name)
+                Text("\(user.age)")
+                Text(user.job)
+            }
             UserIDCard(user: user)
             UserID2()
             ActiveIndicator(isActive: $user.isFrench)
             Toggle("Is French", isOn: $user.isFrench)
             TextField("Change username", text: $user.name)
-            Button("Add score") {
-                user.addScore()
+            Button("Acidify") {
+                user.acidify()
             }
+            Text("\(user.acidity)")
             List(user.scores, id:\.self) { score in
                 Text("\(score)")
             }

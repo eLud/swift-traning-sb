@@ -29,6 +29,9 @@ struct TabbedRoot: View {
             }.tabItem {
                 Label("Dynamic List Id", systemImage: "list.triangle")
             }
+            UserView().tabItem {
+                Label("User View", systemImage: "person.circle.fill")
+            }
         }
     }
 }

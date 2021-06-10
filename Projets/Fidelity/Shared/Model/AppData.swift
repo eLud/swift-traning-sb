@@ -9,7 +9,7 @@ import Foundation
 
 class AppData: ObservableObject {
     
-    var cards: [Card]
+    @Published var cards: [Card]
     
     var favoritesCards: [Card] {
         cards.filter { card in
