@@ -36,6 +36,9 @@
 		331CD1F026724627003DD7E5 /* HeaderToCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1EF26724627003DD7E5 /* HeaderToCardView.swift */; };
 		331CD1F126724627003DD7E5 /* HeaderToCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1EF26724627003DD7E5 /* HeaderToCardView.swift */; };
 		331CD1F226724627003DD7E5 /* HeaderToCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1EF26724627003DD7E5 /* HeaderToCardView.swift */; };
+		331CD1FA26725A53003DD7E5 /* ShopMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1F926725A53003DD7E5 /* ShopMapView.swift */; };
+		331CD1FB26725A53003DD7E5 /* ShopMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1F926725A53003DD7E5 /* ShopMapView.swift */; };
+		331CD1FC26725A53003DD7E5 /* ShopMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331CD1F926725A53003DD7E5 /* ShopMapView.swift */; };
 		3325BCC026665A2C00D573CD /* FidelityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCAD26665A2900D573CD /* FidelityApp.swift */; };
 		3325BCC126665A2C00D573CD /* FidelityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCAD26665A2900D573CD /* FidelityApp.swift */; };
 		3325BCC226665A2C00D573CD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325BCAE26665A2900D573CD /* CardView.swift */; };
@@ -132,6 +135,7 @@
 		331CD1E626723C06003DD7E5 /* SimpleCardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCardList.swift; sourceTree = "<group>"; };
 		331CD1EB26724455003DD7E5 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		331CD1EF26724627003DD7E5 /* HeaderToCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderToCardView.swift; sourceTree = "<group>"; };
+		331CD1F926725A53003DD7E5 /* ShopMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopMapView.swift; sourceTree = "<group>"; };
 		3325BCAD26665A2900D573CD /* FidelityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FidelityApp.swift; sourceTree = "<group>"; };
 		3325BCAE26665A2900D573CD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3325BCAF26665A2C00D573CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -267,6 +271,7 @@
 				331CD1E626723C06003DD7E5 /* SimpleCardList.swift */,
 				3325BCD82666725900D573CD /* CardHeader.swift */,
 				331CD1EF26724627003DD7E5 /* HeaderToCardView.swift */,
+				331CD1F926725A53003DD7E5 /* ShopMapView.swift */,
 				3325BCD726665D4700D573CD /* Model */,
 				3325BCAF26665A2C00D573CD /* Assets.xcassets */,
 			);
@@ -548,6 +553,7 @@
 				331CD1EE26724455003DD7E5 /* Color+Extensions.swift in Sources */,
 				331CD1DA267206F6003DD7E5 /* CardHeader.swift in Sources */,
 				331CD1D9267206F3003DD7E5 /* CardList.swift in Sources */,
+				331CD1FC26725A53003DD7E5 /* ShopMapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +584,7 @@
 				331CD1F026724627003DD7E5 /* HeaderToCardView.swift in Sources */,
 				331CD1E726723C06003DD7E5 /* SimpleCardList.swift in Sources */,
 				331CD1EC26724455003DD7E5 /* Color+Extensions.swift in Sources */,
+				331CD1FA26725A53003DD7E5 /* ShopMapView.swift in Sources */,
 				3325BCC026665A2C00D573CD /* FidelityApp.swift in Sources */,
 				3325BCD526665B7400D573CD /* Brand.swift in Sources */,
 				3325BCD226665B6B00D573CD /* Shop.swift in Sources */,
@@ -596,6 +603,7 @@
 				331CD1F126724627003DD7E5 /* HeaderToCardView.swift in Sources */,
 				331CD1E826723C06003DD7E5 /* SimpleCardList.swift in Sources */,
 				331CD1ED26724455003DD7E5 /* Color+Extensions.swift in Sources */,
+				331CD1FB26725A53003DD7E5 /* ShopMapView.swift in Sources */,
 				3325BCC126665A2C00D573CD /* FidelityApp.swift in Sources */,
 				3325BCD626665B7400D573CD /* Brand.swift in Sources */,
 				3325BCD326665B6B00D573CD /* Shop.swift in Sources */,

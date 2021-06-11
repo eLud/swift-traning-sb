@@ -12,8 +12,9 @@ import Foundation
 // - Lieu (coord)
 // - Lieu (adresse)
 
-struct Shop {
+struct Shop: Identifiable {
     var brand: Brand?
     let location: (Double, Double)
     let adress: String
+    let id = UUID()
 }

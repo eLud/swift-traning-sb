@@ -36,6 +36,10 @@ struct FidelityApp: App {
                     .tabItem {
                         Label("Settings", systemImage: "gearshape.fill")
                     }
+                ShopMapView(shops: appData.shops)
+                    .tabItem {
+                        Label("Shop Map", systemImage: "map")
+                    }
             }.environmentObject(appData)
         }
     }
