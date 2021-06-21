@@ -13,15 +13,12 @@ struct InfoView: View {
     let currentIntervalTime: TimeInterval
     let ascent: Int
 
+    @State private var heartScale = 1.0
+
     var body: some View {
         HStack(alignment: .bottom) {
             Spacer()
-            HStack {
-                Image(systemName: "heart.fill")
-                Text("\(heartRate)")
-            }
-            .font(.caption)
-            .foregroundColor(.red)
+            HeartBeatView(heartRate: heartRate, sideBySide: true)
             HStack {
                 Image(systemName: "stopwatch.fill")
                 Text("\(Int(currentIntervalTime))")
@@ -45,6 +42,6 @@ struct InfoView_Previews: PreviewProvider {
                  currentIntervalTime: 160,
                  ascent: 200)
             .preferredColorScheme(.dark)
-            .previewLayout(.fixed(width: 200, height: 44))
+            .previewLayout(.fixed(width: 300, height: 44))
     }
 }

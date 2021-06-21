@@ -12,7 +12,7 @@ struct FractioneApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                CycleView(cycle: Cycle.previewCycle)
+                ContentView()
             }
         }
 

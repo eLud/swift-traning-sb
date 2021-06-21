@@ -47,6 +47,17 @@
 		33D7C18C26809A6100A34871 /* CycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C18B26809A6100A34871 /* CycleView.swift */; };
 		33D7C18D26809A6100A34871 /* CycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C18B26809A6100A34871 /* CycleView.swift */; };
 		33D7C18E26809A6100A34871 /* CycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C18B26809A6100A34871 /* CycleView.swift */; };
+		33D7C1902680BE7700A34871 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C18F2680BE7700A34871 /* Workout.swift */; };
+		33D7C1912680BE7700A34871 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C18F2680BE7700A34871 /* Workout.swift */; };
+		33D7C1922680BE7700A34871 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C18F2680BE7700A34871 /* Workout.swift */; };
+		33D7C1942680BF4500A34871 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1932680BF4500A34871 /* WorkoutView.swift */; };
+		33D7C1952680BF4500A34871 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1932680BF4500A34871 /* WorkoutView.swift */; };
+		33D7C1962680BF4500A34871 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1932680BF4500A34871 /* WorkoutView.swift */; };
+		33D7C1982680CFE300A34871 /* HeartBeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1972680CFE300A34871 /* HeartBeatView.swift */; };
+		33D7C1992680CFE300A34871 /* HeartBeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1972680CFE300A34871 /* HeartBeatView.swift */; };
+		33D7C19A2680CFE300A34871 /* HeartBeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1972680CFE300A34871 /* HeartBeatView.swift */; };
+		33D7C19E2680DA5C00A34871 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C19B2680DA5C00A34871 /* ActivityView.swift */; };
+		33D7C19F2680E48000A34871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33302DD726807EA9000AEB17 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +132,10 @@
 		33D7C1832680965600A34871 /* Serie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serie.swift; sourceTree = "<group>"; };
 		33D7C187268099CD00A34871 /* Cycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cycle.swift; sourceTree = "<group>"; };
 		33D7C18B26809A6100A34871 /* CycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleView.swift; sourceTree = "<group>"; };
+		33D7C18F2680BE7700A34871 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		33D7C1932680BF4500A34871 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		33D7C1972680CFE300A34871 /* HeartBeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartBeatView.swift; sourceTree = "<group>"; };
+		33D7C19B2680DA5C00A34871 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +183,7 @@
 				33302DF626807FC5000AEB17 /* Step.swift */,
 				33D7C1832680965600A34871 /* Serie.swift */,
 				33D7C187268099CD00A34871 /* Cycle.swift */,
+				33D7C18F2680BE7700A34871 /* Workout.swift */,
 				33302DFC2680800C000AEB17 /* Views */,
 				33302DD726807EA9000AEB17 /* Assets.xcassets */,
 			);
@@ -211,6 +227,8 @@
 				33302DFD2680804E000AEB17 /* StepListView.swift */,
 				33D7C17F268094C000A34871 /* SerieView.swift */,
 				33D7C18B26809A6100A34871 /* CycleView.swift */,
+				33D7C1932680BF4500A34871 /* WorkoutView.swift */,
+				33D7C1972680CFE300A34871 /* HeartBeatView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -228,6 +246,7 @@
 			children = (
 				33D7C15F2680899700A34871 /* FractioneApp.swift */,
 				33D7C1612680899700A34871 /* ContentView.swift */,
+				33D7C19B2680DA5C00A34871 /* ActivityView.swift */,
 				33D7C1632680899700A34871 /* NotificationController.swift */,
 				33D7C1652680899700A34871 /* NotificationView.swift */,
 				33D7C1672680899700A34871 /* ComplicationController.swift */,
@@ -420,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33D7C16D2680899800A34871 /* Preview Assets.xcassets in Resources */,
+				33D7C19F2680E48000A34871 /* Assets.xcassets in Resources */,
 				33D7C16A2680899800A34871 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,13 +453,16 @@
 			files = (
 				33302DFA26808006000AEB17 /* StepView.swift in Sources */,
 				33302DFE2680804E000AEB17 /* StepListView.swift in Sources */,
+				33D7C1982680CFE300A34871 /* HeartBeatView.swift in Sources */,
 				33302DEA26807EA9000AEB17 /* ContentView.swift in Sources */,
 				33D7C18C26809A6100A34871 /* CycleView.swift in Sources */,
 				33302DE826807EA9000AEB17 /* FractioneApp.swift in Sources */,
 				33D7C180268094C000A34871 /* SerieView.swift in Sources */,
+				33D7C1902680BE7700A34871 /* Workout.swift in Sources */,
 				33D7C188268099CD00A34871 /* Cycle.swift in Sources */,
 				33D7C1482680858000A34871 /* InfoView.swift in Sources */,
 				33D7C1842680965600A34871 /* Serie.swift in Sources */,
+				33D7C1942680BF4500A34871 /* WorkoutView.swift in Sources */,
 				33302DF726807FC5000AEB17 /* Step.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,13 +473,16 @@
 			files = (
 				33302DFB26808006000AEB17 /* StepView.swift in Sources */,
 				33302DFF2680804E000AEB17 /* StepListView.swift in Sources */,
+				33D7C1992680CFE300A34871 /* HeartBeatView.swift in Sources */,
 				33302DEB26807EA9000AEB17 /* ContentView.swift in Sources */,
 				33D7C18D26809A6100A34871 /* CycleView.swift in Sources */,
 				33302DE926807EA9000AEB17 /* FractioneApp.swift in Sources */,
 				33D7C181268094C000A34871 /* SerieView.swift in Sources */,
+				33D7C1912680BE7700A34871 /* Workout.swift in Sources */,
 				33D7C189268099CD00A34871 /* Cycle.swift in Sources */,
 				33D7C1492680858000A34871 /* InfoView.swift in Sources */,
 				33D7C1852680965600A34871 /* Serie.swift in Sources */,
+				33D7C1952680BF4500A34871 /* WorkoutView.swift in Sources */,
 				33302DF826807FC5000AEB17 /* Step.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,11 +495,15 @@
 				33D7C1642680899700A34871 /* NotificationController.swift in Sources */,
 				33D7C18A268099CD00A34871 /* Cycle.swift in Sources */,
 				33D7C1622680899700A34871 /* ContentView.swift in Sources */,
+				33D7C1962680BF4500A34871 /* WorkoutView.swift in Sources */,
 				33D7C1682680899700A34871 /* ComplicationController.swift in Sources */,
 				33D7C182268094C000A34871 /* SerieView.swift in Sources */,
 				33D7C1602680899700A34871 /* FractioneApp.swift in Sources */,
 				33D7C1862680965600A34871 /* Serie.swift in Sources */,
+				33D7C19E2680DA5C00A34871 /* ActivityView.swift in Sources */,
+				33D7C19A2680CFE300A34871 /* HeartBeatView.swift in Sources */,
 				33D7C18E26809A6100A34871 /* CycleView.swift in Sources */,
+				33D7C1922680BE7700A34871 /* Workout.swift in Sources */,
 				33D7C1662680899700A34871 /* NotificationView.swift in Sources */,
 				33D7C17C26808F6500A34871 /* StepView.swift in Sources */,
 				33D7C17E26808F6900A34871 /* InfoView.swift in Sources */,
@@ -729,7 +759,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.5;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
 		};
@@ -762,7 +792,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 7.5;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
@@ -787,7 +817,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.5;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
 		};
@@ -813,7 +843,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 7.5;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};

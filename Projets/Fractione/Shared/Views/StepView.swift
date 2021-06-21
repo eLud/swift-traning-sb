@@ -21,7 +21,7 @@ struct StepView: View {
         .foregroundColor(step.isCurrent ? .primary : .secondary)
         .padding()
         .background(RoundedRectangle(cornerRadius: 8)
-                        .foregroundColor(.black))
+                        .foregroundColor(Color("stepBackgoundColor")))
     }
 }
 
