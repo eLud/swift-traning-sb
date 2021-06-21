@@ -1,0 +1,909 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33302DE826807EA9000AEB17 /* FractioneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33302DD526807EA6000AEB17 /* FractioneApp.swift */; };
+		33302DE926807EA9000AEB17 /* FractioneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33302DD526807EA6000AEB17 /* FractioneApp.swift */; };
+		33302DEA26807EA9000AEB17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33302DD626807EA6000AEB17 /* ContentView.swift */; };
+		33302DEB26807EA9000AEB17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33302DD626807EA6000AEB17 /* ContentView.swift */; };
+		33302DEC26807EA9000AEB17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33302DD726807EA9000AEB17 /* Assets.xcassets */; };
+		33302DED26807EA9000AEB17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33302DD726807EA9000AEB17 /* Assets.xcassets */; };
+		33302DF726807FC5000AEB17 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33302DF626807FC5000AEB17 /* Step.swift */; };
+		33302DF826807FC5000AEB17 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33302DF626807FC5000AEB17 /* Step.swift */; };
+		33302DFA26808006000AEB17 /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33302DF926808006000AEB17 /* StepView.swift */; };
+		33302DFB26808006000AEB17 /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33302DF926808006000AEB17 /* StepView.swift */; };
+		33302DFE2680804E000AEB17 /* StepListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33302DFD2680804E000AEB17 /* StepListView.swift */; };
+		33302DFF2680804E000AEB17 /* StepListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33302DFD2680804E000AEB17 /* StepListView.swift */; };
+		33D7C1482680858000A34871 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1472680858000A34871 /* InfoView.swift */; };
+		33D7C1492680858000A34871 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1472680858000A34871 /* InfoView.swift */; };
+		33D7C1502680899400A34871 /* FracWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 33D7C14F2680899400A34871 /* FracWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		33D7C1552680899700A34871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D7C1542680899700A34871 /* Assets.xcassets */; };
+		33D7C15B2680899700A34871 /* FracWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 33D7C15A2680899700A34871 /* FracWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		33D7C1602680899700A34871 /* FractioneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C15F2680899700A34871 /* FractioneApp.swift */; };
+		33D7C1622680899700A34871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1612680899700A34871 /* ContentView.swift */; };
+		33D7C1642680899700A34871 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1632680899700A34871 /* NotificationController.swift */; };
+		33D7C1662680899700A34871 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1652680899700A34871 /* NotificationView.swift */; };
+		33D7C1682680899700A34871 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1672680899700A34871 /* ComplicationController.swift */; };
+		33D7C16A2680899800A34871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D7C1692680899800A34871 /* Assets.xcassets */; };
+		33D7C16D2680899800A34871 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D7C16C2680899800A34871 /* Preview Assets.xcassets */; };
+		33D7C17B26808EBB00A34871 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33302DF626807FC5000AEB17 /* Step.swift */; };
+		33D7C17C26808F6500A34871 /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33302DF926808006000AEB17 /* StepView.swift */; };
+		33D7C17D26808F6900A34871 /* StepListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33302DFD2680804E000AEB17 /* StepListView.swift */; };
+		33D7C17E26808F6900A34871 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1472680858000A34871 /* InfoView.swift */; };
+		33D7C180268094C000A34871 /* SerieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C17F268094C000A34871 /* SerieView.swift */; };
+		33D7C181268094C000A34871 /* SerieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C17F268094C000A34871 /* SerieView.swift */; };
+		33D7C182268094C000A34871 /* SerieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C17F268094C000A34871 /* SerieView.swift */; };
+		33D7C1842680965600A34871 /* Serie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1832680965600A34871 /* Serie.swift */; };
+		33D7C1852680965600A34871 /* Serie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1832680965600A34871 /* Serie.swift */; };
+		33D7C1862680965600A34871 /* Serie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1832680965600A34871 /* Serie.swift */; };
+		33D7C188268099CD00A34871 /* Cycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C187268099CD00A34871 /* Cycle.swift */; };
+		33D7C189268099CD00A34871 /* Cycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C187268099CD00A34871 /* Cycle.swift */; };
+		33D7C18A268099CD00A34871 /* Cycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C187268099CD00A34871 /* Cycle.swift */; };
+		33D7C18C26809A6100A34871 /* CycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C18B26809A6100A34871 /* CycleView.swift */; };
+		33D7C18D26809A6100A34871 /* CycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C18B26809A6100A34871 /* CycleView.swift */; };
+		33D7C18E26809A6100A34871 /* CycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C18B26809A6100A34871 /* CycleView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33D7C1512680899400A34871 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33302DD026807EA6000AEB17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33D7C14E2680899400A34871;
+			remoteInfo = "FracWatch WatchKit App";
+		};
+		33D7C15C2680899700A34871 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33302DD026807EA6000AEB17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33D7C1592680899700A34871;
+			remoteInfo = "FracWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		33D7C1732680899800A34871 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				33D7C15B2680899700A34871 /* FracWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D7C1772680899800A34871 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				33D7C1502680899400A34871 /* FracWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		33302DD526807EA6000AEB17 /* FractioneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractioneApp.swift; sourceTree = "<group>"; };
+		33302DD626807EA6000AEB17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		33302DD726807EA9000AEB17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33302DDC26807EA9000AEB17 /* Fractione.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fractione.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33302DDF26807EA9000AEB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33302DE426807EA9000AEB17 /* Fractione.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fractione.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33302DE626807EA9000AEB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33302DE726807EA9000AEB17 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		33302DF626807FC5000AEB17 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		33302DF926808006000AEB17 /* StepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
+		33302DFD2680804E000AEB17 /* StepListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepListView.swift; sourceTree = "<group>"; };
+		33D7C1472680858000A34871 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		33D7C14C2680899400A34871 /* FracWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FracWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D7C14F2680899400A34871 /* FracWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FracWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D7C1542680899700A34871 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33D7C15A2680899700A34871 /* FracWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FracWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D7C15F2680899700A34871 /* FractioneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractioneApp.swift; sourceTree = "<group>"; };
+		33D7C1612680899700A34871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		33D7C1632680899700A34871 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		33D7C1652680899700A34871 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		33D7C1672680899700A34871 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		33D7C1692680899800A34871 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33D7C16C2680899800A34871 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		33D7C16E2680899800A34871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33D7C16F2680899800A34871 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		33D7C17F268094C000A34871 /* SerieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieView.swift; sourceTree = "<group>"; };
+		33D7C1832680965600A34871 /* Serie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serie.swift; sourceTree = "<group>"; };
+		33D7C187268099CD00A34871 /* Cycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cycle.swift; sourceTree = "<group>"; };
+		33D7C18B26809A6100A34871 /* CycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33302DD926807EA9000AEB17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33302DE126807EA9000AEB17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D7C1572680899700A34871 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33302DCF26807EA6000AEB17 = {
+			isa = PBXGroup;
+			children = (
+				33302DD426807EA6000AEB17 /* Shared */,
+				33302DDE26807EA9000AEB17 /* iOS */,
+				33302DE526807EA9000AEB17 /* macOS */,
+				33D7C1532680899400A34871 /* FracWatch WatchKit App */,
+				33D7C15E2680899700A34871 /* FracWatch WatchKit Extension */,
+				33302DDD26807EA9000AEB17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		33302DD426807EA6000AEB17 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				33302DD526807EA6000AEB17 /* FractioneApp.swift */,
+				33302DD626807EA6000AEB17 /* ContentView.swift */,
+				33302DF626807FC5000AEB17 /* Step.swift */,
+				33D7C1832680965600A34871 /* Serie.swift */,
+				33D7C187268099CD00A34871 /* Cycle.swift */,
+				33302DFC2680800C000AEB17 /* Views */,
+				33302DD726807EA9000AEB17 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		33302DDD26807EA9000AEB17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33302DDC26807EA9000AEB17 /* Fractione.app */,
+				33302DE426807EA9000AEB17 /* Fractione.app */,
+				33D7C14C2680899400A34871 /* FracWatch.app */,
+				33D7C14F2680899400A34871 /* FracWatch WatchKit App.app */,
+				33D7C15A2680899700A34871 /* FracWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33302DDE26807EA9000AEB17 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				33302DDF26807EA9000AEB17 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		33302DE526807EA9000AEB17 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				33302DE626807EA9000AEB17 /* Info.plist */,
+				33302DE726807EA9000AEB17 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		33302DFC2680800C000AEB17 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				33302DF926808006000AEB17 /* StepView.swift */,
+				33D7C1472680858000A34871 /* InfoView.swift */,
+				33302DFD2680804E000AEB17 /* StepListView.swift */,
+				33D7C17F268094C000A34871 /* SerieView.swift */,
+				33D7C18B26809A6100A34871 /* CycleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		33D7C1532680899400A34871 /* FracWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				33D7C1542680899700A34871 /* Assets.xcassets */,
+			);
+			path = "FracWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		33D7C15E2680899700A34871 /* FracWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				33D7C15F2680899700A34871 /* FractioneApp.swift */,
+				33D7C1612680899700A34871 /* ContentView.swift */,
+				33D7C1632680899700A34871 /* NotificationController.swift */,
+				33D7C1652680899700A34871 /* NotificationView.swift */,
+				33D7C1672680899700A34871 /* ComplicationController.swift */,
+				33D7C1692680899800A34871 /* Assets.xcassets */,
+				33D7C16E2680899800A34871 /* Info.plist */,
+				33D7C16F2680899800A34871 /* PushNotificationPayload.apns */,
+				33D7C16B2680899800A34871 /* Preview Content */,
+			);
+			path = "FracWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		33D7C16B2680899800A34871 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				33D7C16C2680899800A34871 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33302DDB26807EA9000AEB17 /* Fractione (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33302DF026807EA9000AEB17 /* Build configuration list for PBXNativeTarget "Fractione (iOS)" */;
+			buildPhases = (
+				33302DD826807EA9000AEB17 /* Sources */,
+				33302DD926807EA9000AEB17 /* Frameworks */,
+				33302DDA26807EA9000AEB17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fractione (iOS)";
+			productName = "Fractione (iOS)";
+			productReference = 33302DDC26807EA9000AEB17 /* Fractione.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33302DE326807EA9000AEB17 /* Fractione (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33302DF326807EA9000AEB17 /* Build configuration list for PBXNativeTarget "Fractione (macOS)" */;
+			buildPhases = (
+				33302DE026807EA9000AEB17 /* Sources */,
+				33302DE126807EA9000AEB17 /* Frameworks */,
+				33302DE226807EA9000AEB17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fractione (macOS)";
+			productName = "Fractione (macOS)";
+			productReference = 33302DE426807EA9000AEB17 /* Fractione.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33D7C14B2680899400A34871 /* FracWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33D7C1782680899800A34871 /* Build configuration list for PBXNativeTarget "FracWatch" */;
+			buildPhases = (
+				33D7C14A2680899400A34871 /* Resources */,
+				33D7C1772680899800A34871 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33D7C1522680899400A34871 /* PBXTargetDependency */,
+			);
+			name = FracWatch;
+			productName = FracWatch;
+			productReference = 33D7C14C2680899400A34871 /* FracWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		33D7C14E2680899400A34871 /* FracWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33D7C1742680899800A34871 /* Build configuration list for PBXNativeTarget "FracWatch WatchKit App" */;
+			buildPhases = (
+				33D7C14D2680899400A34871 /* Resources */,
+				33D7C1732680899800A34871 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33D7C15D2680899700A34871 /* PBXTargetDependency */,
+			);
+			name = "FracWatch WatchKit App";
+			productName = "FracWatch WatchKit App";
+			productReference = 33D7C14F2680899400A34871 /* FracWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		33D7C1592680899700A34871 /* FracWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33D7C1702680899800A34871 /* Build configuration list for PBXNativeTarget "FracWatch WatchKit Extension" */;
+			buildPhases = (
+				33D7C1562680899700A34871 /* Sources */,
+				33D7C1572680899700A34871 /* Frameworks */,
+				33D7C1582680899700A34871 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FracWatch WatchKit Extension";
+			productName = "FracWatch WatchKit Extension";
+			productReference = 33D7C15A2680899700A34871 /* FracWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33302DD026807EA6000AEB17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					33302DDB26807EA9000AEB17 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					33302DE326807EA9000AEB17 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					33D7C14B2680899400A34871 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					33D7C14E2680899400A34871 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					33D7C1592680899700A34871 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 33302DD326807EA6000AEB17 /* Build configuration list for PBXProject "Fractione" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33302DCF26807EA6000AEB17;
+			productRefGroup = 33302DDD26807EA9000AEB17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33302DDB26807EA9000AEB17 /* Fractione (iOS) */,
+				33302DE326807EA9000AEB17 /* Fractione (macOS) */,
+				33D7C14B2680899400A34871 /* FracWatch */,
+				33D7C14E2680899400A34871 /* FracWatch WatchKit App */,
+				33D7C1592680899700A34871 /* FracWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33302DDA26807EA9000AEB17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33302DEC26807EA9000AEB17 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33302DE226807EA9000AEB17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33302DED26807EA9000AEB17 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D7C14A2680899400A34871 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D7C14D2680899400A34871 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D7C1552680899700A34871 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D7C1582680899700A34871 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D7C16D2680899800A34871 /* Preview Assets.xcassets in Resources */,
+				33D7C16A2680899800A34871 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33302DD826807EA9000AEB17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33302DFA26808006000AEB17 /* StepView.swift in Sources */,
+				33302DFE2680804E000AEB17 /* StepListView.swift in Sources */,
+				33302DEA26807EA9000AEB17 /* ContentView.swift in Sources */,
+				33D7C18C26809A6100A34871 /* CycleView.swift in Sources */,
+				33302DE826807EA9000AEB17 /* FractioneApp.swift in Sources */,
+				33D7C180268094C000A34871 /* SerieView.swift in Sources */,
+				33D7C188268099CD00A34871 /* Cycle.swift in Sources */,
+				33D7C1482680858000A34871 /* InfoView.swift in Sources */,
+				33D7C1842680965600A34871 /* Serie.swift in Sources */,
+				33302DF726807FC5000AEB17 /* Step.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33302DE026807EA9000AEB17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33302DFB26808006000AEB17 /* StepView.swift in Sources */,
+				33302DFF2680804E000AEB17 /* StepListView.swift in Sources */,
+				33302DEB26807EA9000AEB17 /* ContentView.swift in Sources */,
+				33D7C18D26809A6100A34871 /* CycleView.swift in Sources */,
+				33302DE926807EA9000AEB17 /* FractioneApp.swift in Sources */,
+				33D7C181268094C000A34871 /* SerieView.swift in Sources */,
+				33D7C189268099CD00A34871 /* Cycle.swift in Sources */,
+				33D7C1492680858000A34871 /* InfoView.swift in Sources */,
+				33D7C1852680965600A34871 /* Serie.swift in Sources */,
+				33302DF826807FC5000AEB17 /* Step.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D7C1562680899700A34871 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D7C17D26808F6900A34871 /* StepListView.swift in Sources */,
+				33D7C1642680899700A34871 /* NotificationController.swift in Sources */,
+				33D7C18A268099CD00A34871 /* Cycle.swift in Sources */,
+				33D7C1622680899700A34871 /* ContentView.swift in Sources */,
+				33D7C1682680899700A34871 /* ComplicationController.swift in Sources */,
+				33D7C182268094C000A34871 /* SerieView.swift in Sources */,
+				33D7C1602680899700A34871 /* FractioneApp.swift in Sources */,
+				33D7C1862680965600A34871 /* Serie.swift in Sources */,
+				33D7C18E26809A6100A34871 /* CycleView.swift in Sources */,
+				33D7C1662680899700A34871 /* NotificationView.swift in Sources */,
+				33D7C17C26808F6500A34871 /* StepView.swift in Sources */,
+				33D7C17E26808F6900A34871 /* InfoView.swift in Sources */,
+				33D7C17B26808EBB00A34871 /* Step.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33D7C1522680899400A34871 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33D7C14E2680899400A34871 /* FracWatch WatchKit App */;
+			targetProxy = 33D7C1512680899400A34871 /* PBXContainerItemProxy */;
+		};
+		33D7C15D2680899700A34871 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33D7C1592680899700A34871 /* FracWatch WatchKit Extension */;
+			targetProxy = 33D7C15C2680899700A34871 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		33302DEE26807EA9000AEB17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		33302DEF26807EA9000AEB17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		33302DF126807EA9000AEB17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.Fractione;
+				PRODUCT_NAME = Fractione;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33302DF226807EA9000AEB17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.Fractione;
+				PRODUCT_NAME = Fractione;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33302DF426807EA9000AEB17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.Fractione;
+				PRODUCT_NAME = Fractione;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		33302DF526807EA9000AEB17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.Fractione;
+				PRODUCT_NAME = Fractione;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		33D7C1712680899800A34871 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FracWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FracWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "FracWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.FracWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.5;
+			};
+			name = Debug;
+		};
+		33D7C1722680899800A34871 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FracWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FracWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "FracWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.FracWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.5;
+			};
+			name = Release;
+		};
+		33D7C1752680899800A34871 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = FracWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "FracWatch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.FracWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.5;
+			};
+			name = Debug;
+		};
+		33D7C1762680899800A34871 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = FracWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "FracWatch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.FracWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.5;
+			};
+			name = Release;
+		};
+		33D7C1792680899800A34871 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.FracWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		33D7C17A2680899800A34871 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.FracWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33302DD326807EA6000AEB17 /* Build configuration list for PBXProject "Fractione" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33302DEE26807EA9000AEB17 /* Debug */,
+				33302DEF26807EA9000AEB17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33302DF026807EA9000AEB17 /* Build configuration list for PBXNativeTarget "Fractione (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33302DF126807EA9000AEB17 /* Debug */,
+				33302DF226807EA9000AEB17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33302DF326807EA9000AEB17 /* Build configuration list for PBXNativeTarget "Fractione (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33302DF426807EA9000AEB17 /* Debug */,
+				33302DF526807EA9000AEB17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33D7C1702680899800A34871 /* Build configuration list for PBXNativeTarget "FracWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D7C1712680899800A34871 /* Debug */,
+				33D7C1722680899800A34871 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33D7C1742680899800A34871 /* Build configuration list for PBXNativeTarget "FracWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D7C1752680899800A34871 /* Debug */,
+				33D7C1762680899800A34871 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33D7C1782680899800A34871 /* Build configuration list for PBXNativeTarget "FracWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D7C1792680899800A34871 /* Debug */,
+				33D7C17A2680899800A34871 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33302DD026807EA6000AEB17 /* Project object */;
+}
