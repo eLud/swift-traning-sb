@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @State var selection = 1
+    @State private var selection = 1
     
     var body: some View {
         TabView(selection: $selection) {
-            Text("Controls")
+            ControlsView(tabSelection: $selection)
                 .tag(0)
             ActivityView()
                 .tag(1)

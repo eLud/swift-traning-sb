@@ -18,5 +18,7 @@
 	<string>We access your health data to get access to your hear rate during workout</string>
 	<key>NSHealthUpdateUsageDescription</key>
 	<string>We access your health data to get access to your hear rate during workout</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need your location</string>
 </dict>
 </plist>

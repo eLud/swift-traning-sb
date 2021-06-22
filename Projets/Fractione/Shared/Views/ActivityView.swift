@@ -13,6 +13,8 @@ struct ActivityView: View {
     var distance: Double = 350
     var timeElapsed: Int = 96
 
+    @EnvironmentObject var locationManager: LocationDataManager
+
     var body: some View {
         VStack {
             HStack {
@@ -25,7 +27,13 @@ struct ActivityView: View {
                         .foregroundColor(.green)
                 }
             }
-
+            if let location = locationManager.currentLocation,
+               location.speed > 0.0 {
+                HStack {
+                    Spacer()
+                    Text("\(Int(location.speed * 3.6))km/h")
+                }
+            }
             StepView(step: Step(kind: .run, objective: .duration(objective: 40), limit: nil, isCurrent: true))
             StepView(step: Step(kind: .recover, objective: .duration(objective: 40), limit: nil, isCurrent: true))
                 .scaleEffect(0.9)
@@ -47,6 +55,9 @@ extension Int {
 
 struct ActivityView_Previews: PreviewProvider {
     static var previews: some View {
+        let manager = LocationDataManager()
         ActivityView()
+            .environmentObject(manager)
+            .environmentObject(HealtKitDataManager())
     }
 }

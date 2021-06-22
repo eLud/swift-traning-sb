@@ -23,6 +23,15 @@
 		3393527D2681DFBB00018E64 /* HealtKitDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393527B2681DFBB00018E64 /* HealtKitDataManager.swift */; };
 		3393527E2681DFBB00018E64 /* HealtKitDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393527B2681DFBB00018E64 /* HealtKitDataManager.swift */; };
 		339352822681E1B500018E64 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339352812681E1B500018E64 /* HealthKit.framework */; };
+		339352842682193200018E64 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339352832682193200018E64 /* ControlsView.swift */; };
+		3393528526821F3500018E64 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C19B2680DA5C00A34871 /* ActivityView.swift */; };
+		3393528626821F3500018E64 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C19B2680DA5C00A34871 /* ActivityView.swift */; };
+		3393528726821F3900018E64 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339352832682193200018E64 /* ControlsView.swift */; };
+		3393528826821F3900018E64 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339352832682193200018E64 /* ControlsView.swift */; };
+		3393528B2682213100018E64 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3393528A2682213100018E64 /* HealthKit.framework */; };
+		3393528D268225B500018E64 /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393528C268225B500018E64 /* LocationDataManager.swift */; };
+		3393528E268225B500018E64 /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393528C268225B500018E64 /* LocationDataManager.swift */; };
+		3393528F268225B500018E64 /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393528C268225B500018E64 /* LocationDataManager.swift */; };
 		33D7C1482680858000A34871 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1472680858000A34871 /* InfoView.swift */; };
 		33D7C1492680858000A34871 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1472680858000A34871 /* InfoView.swift */; };
 		33D7C1502680899400A34871 /* FracWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 33D7C14F2680899400A34871 /* FracWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -121,6 +130,10 @@
 		3393527B2681DFBB00018E64 /* HealtKitDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealtKitDataManager.swift; sourceTree = "<group>"; };
 		3393527F2681E1B500018E64 /* FracWatch WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FracWatch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		339352812681E1B500018E64 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		339352832682193200018E64 /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
+		339352892682213000018E64 /* Fractione.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fractione.entitlements; sourceTree = "<group>"; };
+		3393528A2682213100018E64 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		3393528C268225B500018E64 /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
 		33D7C1472680858000A34871 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		33D7C14C2680899400A34871 /* FracWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FracWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D7C14F2680899400A34871 /* FracWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FracWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3393528B2682213100018E64 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +188,7 @@
 		33302DCF26807EA6000AEB17 = {
 			isa = PBXGroup;
 			children = (
+				339352892682213000018E64 /* Fractione.entitlements */,
 				33302DD426807EA6000AEB17 /* Shared */,
 				33302DDE26807EA9000AEB17 /* iOS */,
 				33302DE526807EA9000AEB17 /* macOS */,
@@ -194,6 +209,7 @@
 				33D7C187268099CD00A34871 /* Cycle.swift */,
 				33D7C18F2680BE7700A34871 /* Workout.swift */,
 				3393527B2681DFBB00018E64 /* HealtKitDataManager.swift */,
+				3393528C268225B500018E64 /* LocationDataManager.swift */,
 				33302DFC2680800C000AEB17 /* Views */,
 				33302DD726807EA9000AEB17 /* Assets.xcassets */,
 			);
@@ -232,6 +248,7 @@
 		33302DFC2680800C000AEB17 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				339352832682193200018E64 /* ControlsView.swift */,
 				33302DF926808006000AEB17 /* StepView.swift */,
 				33D7C1472680858000A34871 /* InfoView.swift */,
 				33302DFD2680804E000AEB17 /* StepListView.swift */,
@@ -239,6 +256,7 @@
 				33D7C18B26809A6100A34871 /* CycleView.swift */,
 				33D7C1932680BF4500A34871 /* WorkoutView.swift */,
 				33D7C1972680CFE300A34871 /* HeartBeatView.swift */,
+				33D7C19B2680DA5C00A34871 /* ActivityView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -246,6 +264,7 @@
 		339352802681E1B500018E64 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3393528A2682213100018E64 /* HealthKit.framework */,
 				339352812681E1B500018E64 /* HealthKit.framework */,
 			);
 			name = Frameworks;
@@ -265,7 +284,6 @@
 				3393527F2681E1B500018E64 /* FracWatch WatchKit Extension.entitlements */,
 				33D7C15F2680899700A34871 /* FractioneApp.swift */,
 				33D7C1612680899700A34871 /* ContentView.swift */,
-				33D7C19B2680DA5C00A34871 /* ActivityView.swift */,
 				33D7C1632680899700A34871 /* NotificationController.swift */,
 				33D7C1652680899700A34871 /* NotificationView.swift */,
 				33D7C1672680899700A34871 /* ComplicationController.swift */,
@@ -478,9 +496,12 @@
 				3393527C2681DFBB00018E64 /* HealtKitDataManager.swift in Sources */,
 				33302DE826807EA9000AEB17 /* FractioneApp.swift in Sources */,
 				33D7C180268094C000A34871 /* SerieView.swift in Sources */,
+				3393528526821F3500018E64 /* ActivityView.swift in Sources */,
+				3393528D268225B500018E64 /* LocationDataManager.swift in Sources */,
 				33D7C1902680BE7700A34871 /* Workout.swift in Sources */,
 				33D7C188268099CD00A34871 /* Cycle.swift in Sources */,
 				33D7C1482680858000A34871 /* InfoView.swift in Sources */,
+				3393528726821F3900018E64 /* ControlsView.swift in Sources */,
 				33D7C1842680965600A34871 /* Serie.swift in Sources */,
 				33D7C1942680BF4500A34871 /* WorkoutView.swift in Sources */,
 				33302DF726807FC5000AEB17 /* Step.swift in Sources */,
@@ -499,9 +520,12 @@
 				3393527D2681DFBB00018E64 /* HealtKitDataManager.swift in Sources */,
 				33302DE926807EA9000AEB17 /* FractioneApp.swift in Sources */,
 				33D7C181268094C000A34871 /* SerieView.swift in Sources */,
+				3393528626821F3500018E64 /* ActivityView.swift in Sources */,
+				3393528E268225B500018E64 /* LocationDataManager.swift in Sources */,
 				33D7C1912680BE7700A34871 /* Workout.swift in Sources */,
 				33D7C189268099CD00A34871 /* Cycle.swift in Sources */,
 				33D7C1492680858000A34871 /* InfoView.swift in Sources */,
+				3393528826821F3900018E64 /* ControlsView.swift in Sources */,
 				33D7C1852680965600A34871 /* Serie.swift in Sources */,
 				33D7C1952680BF4500A34871 /* WorkoutView.swift in Sources */,
 				33302DF826807FC5000AEB17 /* Step.swift in Sources */,
@@ -521,10 +545,12 @@
 				33D7C182268094C000A34871 /* SerieView.swift in Sources */,
 				33D7C1602680899700A34871 /* FractioneApp.swift in Sources */,
 				33D7C1862680965600A34871 /* Serie.swift in Sources */,
+				339352842682193200018E64 /* ControlsView.swift in Sources */,
 				33D7C19E2680DA5C00A34871 /* ActivityView.swift in Sources */,
 				33D7C19A2680CFE300A34871 /* HeartBeatView.swift in Sources */,
 				33D7C18E26809A6100A34871 /* CycleView.swift in Sources */,
 				33D7C1922680BE7700A34871 /* Workout.swift in Sources */,
+				3393528F268225B500018E64 /* LocationDataManager.swift in Sources */,
 				33D7C1662680899700A34871 /* NotificationView.swift in Sources */,
 				33D7C17C26808F6500A34871 /* StepView.swift in Sources */,
 				3393527E2681DFBB00018E64 /* HealtKitDataManager.swift in Sources */,
@@ -665,6 +691,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Fractione.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7SGM6JEMA;
 				ENABLE_PREVIEWS = YES;
@@ -687,6 +714,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Fractione.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7SGM6JEMA;
 				ENABLE_PREVIEWS = YES;

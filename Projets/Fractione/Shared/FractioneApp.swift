@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct FractioneApp: App {
+
+    @StateObject var healthManager = HealtKitDataManager()
+    @StateObject var locationManager = LocationDataManager()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(healthManager)
+                .environmentObject(locationManager)
         }
     }
 }

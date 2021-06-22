@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var selection = 1
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView(selection: $selection) {
+            ControlsView(tabSelection: $selection)
+                .tag(0)
+            ActivityView()
+                .tag(1)
+            WorkoutView(workout: .previewWorkout)
+                .tag(2)
+        }
     }
 }
 
