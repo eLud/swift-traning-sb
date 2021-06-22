@@ -13,6 +13,8 @@ struct HeartBeatView: View {
     @State private var bigHeart = false
     @State var sideBySide: Bool
 
+    @EnvironmentObject var healthManager: HealtKitDataManager
+
     var body: some View {
         ZStack {
             Image(systemName: "heart.fill")
@@ -25,7 +27,7 @@ struct HeartBeatView: View {
                     }
                 }
 
-            Text("\(heartRate)")
+            Text("\(healthManager.heartRate)")
                 .font(.system(.caption))
                 .foregroundColor(sideBySide ? .red : .black)
                 .alignmentGuide(HorizontalAlignment.center) { d in
@@ -41,7 +43,7 @@ struct HeartBeatView: View {
     }
 
     var beatingAnimation: Animation {
-        let duration = 30.0 / Double(heartRate)
+        let duration = 30.0 / Double(healthManager.heartRate)
         let baseAnimation = Animation.easeOut(duration: duration)
         let repeated = baseAnimation.repeatForever(autoreverses: true)
         return repeated

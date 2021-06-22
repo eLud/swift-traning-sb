@@ -19,6 +19,10 @@
 		33302DFB26808006000AEB17 /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33302DF926808006000AEB17 /* StepView.swift */; };
 		33302DFE2680804E000AEB17 /* StepListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33302DFD2680804E000AEB17 /* StepListView.swift */; };
 		33302DFF2680804E000AEB17 /* StepListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33302DFD2680804E000AEB17 /* StepListView.swift */; };
+		3393527C2681DFBB00018E64 /* HealtKitDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393527B2681DFBB00018E64 /* HealtKitDataManager.swift */; };
+		3393527D2681DFBB00018E64 /* HealtKitDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393527B2681DFBB00018E64 /* HealtKitDataManager.swift */; };
+		3393527E2681DFBB00018E64 /* HealtKitDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393527B2681DFBB00018E64 /* HealtKitDataManager.swift */; };
+		339352822681E1B500018E64 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339352812681E1B500018E64 /* HealthKit.framework */; };
 		33D7C1482680858000A34871 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1472680858000A34871 /* InfoView.swift */; };
 		33D7C1492680858000A34871 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1472680858000A34871 /* InfoView.swift */; };
 		33D7C1502680899400A34871 /* FracWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 33D7C14F2680899400A34871 /* FracWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -114,6 +118,9 @@
 		33302DF626807FC5000AEB17 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		33302DF926808006000AEB17 /* StepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
 		33302DFD2680804E000AEB17 /* StepListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepListView.swift; sourceTree = "<group>"; };
+		3393527B2681DFBB00018E64 /* HealtKitDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealtKitDataManager.swift; sourceTree = "<group>"; };
+		3393527F2681E1B500018E64 /* FracWatch WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FracWatch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		339352812681E1B500018E64 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		33D7C1472680858000A34871 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		33D7C14C2680899400A34871 /* FracWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FracWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D7C14F2680899400A34871 /* FracWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FracWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				339352822681E1B500018E64 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +180,7 @@
 				33D7C1532680899400A34871 /* FracWatch WatchKit App */,
 				33D7C15E2680899700A34871 /* FracWatch WatchKit Extension */,
 				33302DDD26807EA9000AEB17 /* Products */,
+				339352802681E1B500018E64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,6 +193,7 @@
 				33D7C1832680965600A34871 /* Serie.swift */,
 				33D7C187268099CD00A34871 /* Cycle.swift */,
 				33D7C18F2680BE7700A34871 /* Workout.swift */,
+				3393527B2681DFBB00018E64 /* HealtKitDataManager.swift */,
 				33302DFC2680800C000AEB17 /* Views */,
 				33302DD726807EA9000AEB17 /* Assets.xcassets */,
 			);
@@ -233,6 +243,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		339352802681E1B500018E64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				339352812681E1B500018E64 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		33D7C1532680899400A34871 /* FracWatch WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +262,7 @@
 		33D7C15E2680899700A34871 /* FracWatch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				3393527F2681E1B500018E64 /* FracWatch WatchKit Extension.entitlements */,
 				33D7C15F2680899700A34871 /* FractioneApp.swift */,
 				33D7C1612680899700A34871 /* ContentView.swift */,
 				33D7C19B2680DA5C00A34871 /* ActivityView.swift */,
@@ -456,6 +475,7 @@
 				33D7C1982680CFE300A34871 /* HeartBeatView.swift in Sources */,
 				33302DEA26807EA9000AEB17 /* ContentView.swift in Sources */,
 				33D7C18C26809A6100A34871 /* CycleView.swift in Sources */,
+				3393527C2681DFBB00018E64 /* HealtKitDataManager.swift in Sources */,
 				33302DE826807EA9000AEB17 /* FractioneApp.swift in Sources */,
 				33D7C180268094C000A34871 /* SerieView.swift in Sources */,
 				33D7C1902680BE7700A34871 /* Workout.swift in Sources */,
@@ -476,6 +496,7 @@
 				33D7C1992680CFE300A34871 /* HeartBeatView.swift in Sources */,
 				33302DEB26807EA9000AEB17 /* ContentView.swift in Sources */,
 				33D7C18D26809A6100A34871 /* CycleView.swift in Sources */,
+				3393527D2681DFBB00018E64 /* HealtKitDataManager.swift in Sources */,
 				33302DE926807EA9000AEB17 /* FractioneApp.swift in Sources */,
 				33D7C181268094C000A34871 /* SerieView.swift in Sources */,
 				33D7C1912680BE7700A34871 /* Workout.swift in Sources */,
@@ -506,6 +527,7 @@
 				33D7C1922680BE7700A34871 /* Workout.swift in Sources */,
 				33D7C1662680899700A34871 /* NotificationView.swift in Sources */,
 				33D7C17C26808F6500A34871 /* StepView.swift in Sources */,
+				3393527E2681DFBB00018E64 /* HealtKitDataManager.swift in Sources */,
 				33D7C17E26808F6900A34871 /* InfoView.swift in Sources */,
 				33D7C17B26808EBB00A34871 /* Step.swift in Sources */,
 			);
@@ -735,6 +757,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "FracWatch WatchKit Extension/FracWatch WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FracWatch WatchKit Extension/Preview Content\"";
@@ -743,7 +766,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FracWatch WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "FracWatch WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CFBundleExecutable = "FracWatch WatchKit Extension";
+				INFOPLIST_KEY_CFBundleName = "FracWatch WatchKit Extension";
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = FracWatch_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -759,7 +785,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
 			};
 			name = Debug;
 		};
@@ -767,6 +793,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "FracWatch WatchKit Extension/FracWatch WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FracWatch WatchKit Extension/Preview Content\"";
@@ -775,7 +802,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FracWatch WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "FracWatch WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CFBundleExecutable = "FracWatch WatchKit Extension";
+				INFOPLIST_KEY_CFBundleName = "FracWatch WatchKit Extension";
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = FracWatch_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -792,7 +822,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
 			};
 			name = Release;
 		};
@@ -817,7 +847,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
 			};
 			name = Debug;
 		};
@@ -843,7 +873,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
 			};
 			name = Release;
 		};

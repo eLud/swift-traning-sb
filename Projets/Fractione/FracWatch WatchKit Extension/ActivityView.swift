@@ -25,8 +25,7 @@ struct ActivityView: View {
                         .foregroundColor(.green)
                 }
             }
-            Capsule()
-                .frame(height: 50)
+
             StepView(step: Step(kind: .run, objective: .duration(objective: 40), limit: nil, isCurrent: true))
             StepView(step: Step(kind: .recover, objective: .duration(objective: 40), limit: nil, isCurrent: true))
                 .scaleEffect(0.9)
