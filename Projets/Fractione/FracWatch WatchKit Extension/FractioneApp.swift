@@ -16,10 +16,9 @@ struct FractioneApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
-                    .environmentObject(healthManager)
-                    .environmentObject(locationManager)
-            }
+                WorkoutChoiceView()
+            }.environmentObject(healthManager)
+                .environmentObject(locationManager)
         }
 
         WKNotificationScene(controller: NotificationController.self, category: "myCategory")

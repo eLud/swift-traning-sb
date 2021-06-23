@@ -10,8 +10,8 @@ import SwiftUI
 struct ControlsView: View {
 
     @Binding var tabSelection: Int
+    @State private var workoutStarted = true
 
-    @State private var workoutStarted = false
     @EnvironmentObject var healthManager: HealtKitDataManager
     @EnvironmentObject var locationManager: LocationDataManager
 

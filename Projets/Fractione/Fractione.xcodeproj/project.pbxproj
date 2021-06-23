@@ -32,13 +32,21 @@
 		3393528D268225B500018E64 /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393528C268225B500018E64 /* LocationDataManager.swift */; };
 		3393528E268225B500018E64 /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393528C268225B500018E64 /* LocationDataManager.swift */; };
 		3393528F268225B500018E64 /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393528C268225B500018E64 /* LocationDataManager.swift */; };
+		3393529126831FC700018E64 /* WorkoutChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393529026831FC700018E64 /* WorkoutChoiceView.swift */; };
+		3393529226831FC700018E64 /* WorkoutChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393529026831FC700018E64 /* WorkoutChoiceView.swift */; };
+		3393529326831FC700018E64 /* WorkoutChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393529026831FC700018E64 /* WorkoutChoiceView.swift */; };
+		33935295268326F700018E64 /* TrainingChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33935294268326F700018E64 /* TrainingChoiceView.swift */; };
+		33935296268326F700018E64 /* TrainingChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33935294268326F700018E64 /* TrainingChoiceView.swift */; };
+		33935297268326F700018E64 /* TrainingChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33935294268326F700018E64 /* TrainingChoiceView.swift */; };
+		3393529826832DB100018E64 /* OnGoingWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1612680899700A34871 /* OnGoingWorkoutView.swift */; };
+		3393529926832DB200018E64 /* OnGoingWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1612680899700A34871 /* OnGoingWorkoutView.swift */; };
 		33D7C1482680858000A34871 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1472680858000A34871 /* InfoView.swift */; };
 		33D7C1492680858000A34871 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1472680858000A34871 /* InfoView.swift */; };
 		33D7C1502680899400A34871 /* FracWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 33D7C14F2680899400A34871 /* FracWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		33D7C1552680899700A34871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D7C1542680899700A34871 /* Assets.xcassets */; };
 		33D7C15B2680899700A34871 /* FracWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 33D7C15A2680899700A34871 /* FracWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		33D7C1602680899700A34871 /* FractioneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C15F2680899700A34871 /* FractioneApp.swift */; };
-		33D7C1622680899700A34871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1612680899700A34871 /* ContentView.swift */; };
+		33D7C1622680899700A34871 /* OnGoingWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1612680899700A34871 /* OnGoingWorkoutView.swift */; };
 		33D7C1642680899700A34871 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1632680899700A34871 /* NotificationController.swift */; };
 		33D7C1662680899700A34871 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1652680899700A34871 /* NotificationView.swift */; };
 		33D7C1682680899700A34871 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1672680899700A34871 /* ComplicationController.swift */; };
@@ -134,13 +142,15 @@
 		339352892682213000018E64 /* Fractione.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fractione.entitlements; sourceTree = "<group>"; };
 		3393528A2682213100018E64 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		3393528C268225B500018E64 /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
+		3393529026831FC700018E64 /* WorkoutChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutChoiceView.swift; sourceTree = "<group>"; };
+		33935294268326F700018E64 /* TrainingChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingChoiceView.swift; sourceTree = "<group>"; };
 		33D7C1472680858000A34871 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		33D7C14C2680899400A34871 /* FracWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FracWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D7C14F2680899400A34871 /* FracWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FracWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D7C1542680899700A34871 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33D7C15A2680899700A34871 /* FracWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FracWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D7C15F2680899700A34871 /* FractioneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractioneApp.swift; sourceTree = "<group>"; };
-		33D7C1612680899700A34871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		33D7C1612680899700A34871 /* OnGoingWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnGoingWorkoutView.swift; sourceTree = "<group>"; };
 		33D7C1632680899700A34871 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		33D7C1652680899700A34871 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		33D7C1672680899700A34871 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
@@ -257,6 +267,8 @@
 				33D7C1932680BF4500A34871 /* WorkoutView.swift */,
 				33D7C1972680CFE300A34871 /* HeartBeatView.swift */,
 				33D7C19B2680DA5C00A34871 /* ActivityView.swift */,
+				3393529026831FC700018E64 /* WorkoutChoiceView.swift */,
+				33935294268326F700018E64 /* TrainingChoiceView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -283,7 +295,7 @@
 			children = (
 				3393527F2681E1B500018E64 /* FracWatch WatchKit Extension.entitlements */,
 				33D7C15F2680899700A34871 /* FractioneApp.swift */,
-				33D7C1612680899700A34871 /* ContentView.swift */,
+				33D7C1612680899700A34871 /* OnGoingWorkoutView.swift */,
 				33D7C1632680899700A34871 /* NotificationController.swift */,
 				33D7C1652680899700A34871 /* NotificationView.swift */,
 				33D7C1672680899700A34871 /* ComplicationController.swift */,
@@ -493,6 +505,8 @@
 				33D7C1982680CFE300A34871 /* HeartBeatView.swift in Sources */,
 				33302DEA26807EA9000AEB17 /* ContentView.swift in Sources */,
 				33D7C18C26809A6100A34871 /* CycleView.swift in Sources */,
+				33935295268326F700018E64 /* TrainingChoiceView.swift in Sources */,
+				3393529126831FC700018E64 /* WorkoutChoiceView.swift in Sources */,
 				3393527C2681DFBB00018E64 /* HealtKitDataManager.swift in Sources */,
 				33302DE826807EA9000AEB17 /* FractioneApp.swift in Sources */,
 				33D7C180268094C000A34871 /* SerieView.swift in Sources */,
@@ -504,6 +518,7 @@
 				3393528726821F3900018E64 /* ControlsView.swift in Sources */,
 				33D7C1842680965600A34871 /* Serie.swift in Sources */,
 				33D7C1942680BF4500A34871 /* WorkoutView.swift in Sources */,
+				3393529826832DB100018E64 /* OnGoingWorkoutView.swift in Sources */,
 				33302DF726807FC5000AEB17 /* Step.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +532,8 @@
 				33D7C1992680CFE300A34871 /* HeartBeatView.swift in Sources */,
 				33302DEB26807EA9000AEB17 /* ContentView.swift in Sources */,
 				33D7C18D26809A6100A34871 /* CycleView.swift in Sources */,
+				33935296268326F700018E64 /* TrainingChoiceView.swift in Sources */,
+				3393529226831FC700018E64 /* WorkoutChoiceView.swift in Sources */,
 				3393527D2681DFBB00018E64 /* HealtKitDataManager.swift in Sources */,
 				33302DE926807EA9000AEB17 /* FractioneApp.swift in Sources */,
 				33D7C181268094C000A34871 /* SerieView.swift in Sources */,
@@ -528,6 +545,7 @@
 				3393528826821F3900018E64 /* ControlsView.swift in Sources */,
 				33D7C1852680965600A34871 /* Serie.swift in Sources */,
 				33D7C1952680BF4500A34871 /* WorkoutView.swift in Sources */,
+				3393529926832DB200018E64 /* OnGoingWorkoutView.swift in Sources */,
 				33302DF826807FC5000AEB17 /* Step.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,7 +557,7 @@
 				33D7C17D26808F6900A34871 /* StepListView.swift in Sources */,
 				33D7C1642680899700A34871 /* NotificationController.swift in Sources */,
 				33D7C18A268099CD00A34871 /* Cycle.swift in Sources */,
-				33D7C1622680899700A34871 /* ContentView.swift in Sources */,
+				33D7C1622680899700A34871 /* OnGoingWorkoutView.swift in Sources */,
 				33D7C1962680BF4500A34871 /* WorkoutView.swift in Sources */,
 				33D7C1682680899700A34871 /* ComplicationController.swift in Sources */,
 				33D7C182268094C000A34871 /* SerieView.swift in Sources */,
@@ -550,6 +568,8 @@
 				33D7C19A2680CFE300A34871 /* HeartBeatView.swift in Sources */,
 				33D7C18E26809A6100A34871 /* CycleView.swift in Sources */,
 				33D7C1922680BE7700A34871 /* Workout.swift in Sources */,
+				3393529326831FC700018E64 /* WorkoutChoiceView.swift in Sources */,
+				33935297268326F700018E64 /* TrainingChoiceView.swift in Sources */,
 				3393528F268225B500018E64 /* LocationDataManager.swift in Sources */,
 				33D7C1662680899700A34871 /* NotificationView.swift in Sources */,
 				33D7C17C26808F6500A34871 /* StepView.swift in Sources */,

@@ -21,9 +21,9 @@ class LocationDataManager: NSObject, ObservableObject {
         track = []
         super.init()
 
-        if let savedTrack = UserDefaults.standard.object(forKey: "trackHistory") as? [CLLocation] {
-            self.track = savedTrack
-        }
+//        if let savedTrack = UserDefaults.standard.object(forKey: "trackHistory") as? [CLLocation] {
+//            self.track = savedTrack
+//        }
 
         guard CLLocationManager.locationServicesEnabled() else { return }
         locationManager.delegate = self
@@ -76,7 +76,7 @@ extension LocationDataManager: CLLocationManagerDelegate {
             self.currentLocation = lastLocation
             self.track.append(lastLocation)
 
-            UserDefaults.standard.set(track, forKey: "trackHistory")
+//            UserDefaults.standard.set(track, forKey: "trackHistory")
         }
     }
 }
