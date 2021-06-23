@@ -40,6 +40,9 @@
 		33935297268326F700018E64 /* TrainingChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33935294268326F700018E64 /* TrainingChoiceView.swift */; };
 		3393529826832DB100018E64 /* OnGoingWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1612680899700A34871 /* OnGoingWorkoutView.swift */; };
 		3393529926832DB200018E64 /* OnGoingWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1612680899700A34871 /* OnGoingWorkoutView.swift */; };
+		3393529B26833A4D00018E64 /* SessionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393529A26833A4D00018E64 /* SessionDataManager.swift */; };
+		3393529C26833A4D00018E64 /* SessionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393529A26833A4D00018E64 /* SessionDataManager.swift */; };
+		339352E3268345D900018E64 /* FracWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 33D7C14F2680899400A34871 /* FracWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		33D7C1482680858000A34871 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1472680858000A34871 /* InfoView.swift */; };
 		33D7C1492680858000A34871 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7C1472680858000A34871 /* InfoView.swift */; };
 		33D7C1502680899400A34871 /* FracWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 33D7C14F2680899400A34871 /* FracWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -82,6 +85,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		339352E4268345D900018E64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33302DD026807EA6000AEB17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33D7C14E2680899400A34871;
+			remoteInfo = "FracWatch WatchKit App";
+		};
 		33D7C1512680899400A34871 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 33302DD026807EA6000AEB17 /* Project object */;
@@ -99,6 +109,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		339352E6268345D900018E64 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				339352E3268345D900018E64 /* FracWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33D7C1732680899800A34871 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,6 +165,8 @@
 		3393528C268225B500018E64 /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
 		3393529026831FC700018E64 /* WorkoutChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutChoiceView.swift; sourceTree = "<group>"; };
 		33935294268326F700018E64 /* TrainingChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingChoiceView.swift; sourceTree = "<group>"; };
+		3393529A26833A4D00018E64 /* SessionDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDataManager.swift; sourceTree = "<group>"; };
+		339352E2268344AB00018E64 /* FracWatch-WatchKit-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FracWatch-WatchKit-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		33D7C1472680858000A34871 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		33D7C14C2680899400A34871 /* FracWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FracWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D7C14F2680899400A34871 /* FracWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FracWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,6 +243,7 @@
 				33D7C18F2680BE7700A34871 /* Workout.swift */,
 				3393527B2681DFBB00018E64 /* HealtKitDataManager.swift */,
 				3393528C268225B500018E64 /* LocationDataManager.swift */,
+				3393529A26833A4D00018E64 /* SessionDataManager.swift */,
 				33302DFC2680800C000AEB17 /* Views */,
 				33302DD726807EA9000AEB17 /* Assets.xcassets */,
 			);
@@ -285,6 +309,7 @@
 		33D7C1532680899400A34871 /* FracWatch WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				339352E2268344AB00018E64 /* FracWatch-WatchKit-App-Info.plist */,
 				33D7C1542680899700A34871 /* Assets.xcassets */,
 			);
 			path = "FracWatch WatchKit App";
@@ -325,10 +350,12 @@
 				33302DD826807EA9000AEB17 /* Sources */,
 				33302DD926807EA9000AEB17 /* Frameworks */,
 				33302DDA26807EA9000AEB17 /* Resources */,
+				339352E6268345D900018E64 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				339352E5268345D900018E64 /* PBXTargetDependency */,
 			);
 			name = "Fractione (iOS)";
 			productName = "Fractione (iOS)";
@@ -505,6 +532,7 @@
 				33D7C1982680CFE300A34871 /* HeartBeatView.swift in Sources */,
 				33302DEA26807EA9000AEB17 /* ContentView.swift in Sources */,
 				33D7C18C26809A6100A34871 /* CycleView.swift in Sources */,
+				3393529B26833A4D00018E64 /* SessionDataManager.swift in Sources */,
 				33935295268326F700018E64 /* TrainingChoiceView.swift in Sources */,
 				3393529126831FC700018E64 /* WorkoutChoiceView.swift in Sources */,
 				3393527C2681DFBB00018E64 /* HealtKitDataManager.swift in Sources */,
@@ -558,6 +586,7 @@
 				33D7C1642680899700A34871 /* NotificationController.swift in Sources */,
 				33D7C18A268099CD00A34871 /* Cycle.swift in Sources */,
 				33D7C1622680899700A34871 /* OnGoingWorkoutView.swift in Sources */,
+				3393529C26833A4D00018E64 /* SessionDataManager.swift in Sources */,
 				33D7C1962680BF4500A34871 /* WorkoutView.swift in Sources */,
 				33D7C1682680899700A34871 /* ComplicationController.swift in Sources */,
 				33D7C182268094C000A34871 /* SerieView.swift in Sources */,
@@ -582,6 +611,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		339352E5268345D900018E64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33D7C14E2680899400A34871 /* FracWatch WatchKit App */;
+			targetProxy = 339352E4268345D900018E64 /* PBXContainerItemProxy */;
+		};
 		33D7C1522680899400A34871 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 33D7C14E2680899400A34871 /* FracWatch WatchKit App */;
@@ -721,7 +755,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.Fractione;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.FracWatch;
 				PRODUCT_NAME = Fractione;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -744,7 +778,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.Fractione;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.FracWatch;
 				PRODUCT_NAME = Fractione;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -819,7 +853,7 @@
 				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_CLKComplicationPrincipalClass = FracWatch_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_WKWatchOnly = YES;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -855,7 +889,7 @@
 				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_CLKComplicationPrincipalClass = FracWatch_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_WKWatchOnly = YES;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -885,8 +919,13 @@
 				DEVELOPMENT_TEAM = A7SGM6JEMA;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = FracWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "FracWatch-WatchKit-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "FracWatch WatchKit App";
+				INFOPLIST_KEY_CFBundleExecutable = "FracWatch WatchKit App";
+				INFOPLIST_KEY_CFBundleName = "FracWatch WatchKit App";
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = fr.tectec.FracWatch;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.FracWatch.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -910,8 +949,13 @@
 				DEVELOPMENT_TEAM = A7SGM6JEMA;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = FracWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "FracWatch-WatchKit-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "FracWatch WatchKit App";
+				INFOPLIST_KEY_CFBundleExecutable = "FracWatch WatchKit App";
+				INFOPLIST_KEY_CFBundleName = "FracWatch WatchKit App";
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = fr.tectec.FracWatch;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.FracWatch.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -14,10 +14,22 @@ struct ContentView: View {
     var body: some View {
         TabView(selection: $selection) {
             ControlsView(tabSelection: $selection)
+                .tabItem({
+                    Image(systemName: "switch.2")
+                    Text("Controls")
+                })
                 .tag(0)
             ActivityView()
+                .tabItem({
+                    Image(systemName: "heart.fill")
+                    Text("Activity")
+                })
                 .tag(1)
             WorkoutView(workout: .previewWorkout)
+                .tabItem({
+                    Image(systemName: "list.bullet.rectangle")
+                    Text("Workout")
+                })
                 .tag(2)
         }
     }

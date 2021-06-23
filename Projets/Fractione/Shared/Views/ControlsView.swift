@@ -14,6 +14,7 @@ struct ControlsView: View {
 
     @EnvironmentObject var healthManager: HealtKitDataManager
     @EnvironmentObject var locationManager: LocationDataManager
+    @EnvironmentObject var sessionManager: SessionDataManager
 
     var body: some View {
         VStack {
@@ -22,6 +23,8 @@ struct ControlsView: View {
                     healthManager.stopHeartRateUpdate()
                     locationManager.stopLocationUpdates()
                     workoutStarted = false
+
+                    sessionManager.sendData()
                 }
             } else {
                 Button("Start") {

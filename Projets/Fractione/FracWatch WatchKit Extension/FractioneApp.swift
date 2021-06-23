@@ -12,13 +12,16 @@ struct FractioneApp: App {
 
     @StateObject var healthManager = HealtKitDataManager()
     @StateObject var locationManager = LocationDataManager()
+    @StateObject var sessionManager = SessionDataManager()
 
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
                 WorkoutChoiceView()
-            }.environmentObject(healthManager)
-                .environmentObject(locationManager)
+            }
+            .environmentObject(healthManager)
+            .environmentObject(locationManager)
+            .environmentObject(sessionManager)
         }
 
         WKNotificationScene(controller: NotificationController.self, category: "myCategory")

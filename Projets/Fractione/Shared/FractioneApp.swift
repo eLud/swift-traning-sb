@@ -12,12 +12,14 @@ struct FractioneApp: App {
 
     @StateObject var healthManager = HealtKitDataManager()
     @StateObject var locationManager = LocationDataManager()
+    @StateObject var sessionManager = SessionDataManager()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(healthManager)
                 .environmentObject(locationManager)
+                .environmentObject(sessionManager)
         }
     }
 }
