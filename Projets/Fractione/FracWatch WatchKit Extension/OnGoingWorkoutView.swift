@@ -27,6 +27,7 @@ struct OnGoingWorkoutView: View {
             }
         }.onAppear {
             healthManager.startHeartRateUpdate()
+            healthManager.startWorkout(type: currentWorkout.type)
             locationManager.startLocationUpdates()
         }
     }

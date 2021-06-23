@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		339352FC268381B900018E64 /* SimpleChrono WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 339352FB268381B900018E64 /* SimpleChrono WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		33935301268381BC00018E64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33935300268381BC00018E64 /* Assets.xcassets */; };
+		33935307268381BC00018E64 /* SimpleChrono WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 33935306268381BC00018E64 /* SimpleChrono WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3393530C268381BC00018E64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393530B268381BC00018E64 /* ContentView.swift */; };
+		3393530E268381BC00018E64 /* SimpleChronoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393530D268381BC00018E64 /* SimpleChronoApp.swift */; };
+		33935310268381BC00018E64 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393530F268381BC00018E64 /* ComplicationController.swift */; };
+		33935312268381BD00018E64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33935311268381BD00018E64 /* Assets.xcassets */; };
+		33935315268381BD00018E64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33935314268381BD00018E64 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		339352FD268381B900018E64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 339352F1268381B900018E64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 339352FA268381B900018E64;
+			remoteInfo = "SimpleChrono WatchKit App";
+		};
+		33935308268381BC00018E64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 339352F1268381B900018E64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33935305268381BC00018E64;
+			remoteInfo = "SimpleChrono WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3393531C268381BD00018E64 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				33935307268381BC00018E64 /* SimpleChrono WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33935320268381BD00018E64 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				339352FC268381B900018E64 /* SimpleChrono WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		339352F7268381B900018E64 /* SimpleChrono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleChrono.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		339352FB268381B900018E64 /* SimpleChrono WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleChrono WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33935300268381BC00018E64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33935306268381BC00018E64 /* SimpleChrono WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SimpleChrono WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3393530B268381BC00018E64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3393530D268381BC00018E64 /* SimpleChronoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleChronoApp.swift; sourceTree = "<group>"; };
+		3393530F268381BC00018E64 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		33935311268381BD00018E64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33935314268381BD00018E64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		33935316268381BD00018E64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33935303268381BC00018E64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		339352F0268381B900018E64 = {
+			isa = PBXGroup;
+			children = (
+				339352FF268381B900018E64 /* SimpleChrono WatchKit App */,
+				3393530A268381BC00018E64 /* SimpleChrono WatchKit Extension */,
+				339352F8268381B900018E64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		339352F8268381B900018E64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				339352F7268381B900018E64 /* SimpleChrono.app */,
+				339352FB268381B900018E64 /* SimpleChrono WatchKit App.app */,
+				33935306268381BC00018E64 /* SimpleChrono WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		339352FF268381B900018E64 /* SimpleChrono WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				33935300268381BC00018E64 /* Assets.xcassets */,
+			);
+			path = "SimpleChrono WatchKit App";
+			sourceTree = "<group>";
+		};
+		3393530A268381BC00018E64 /* SimpleChrono WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3393530B268381BC00018E64 /* ContentView.swift */,
+				3393530D268381BC00018E64 /* SimpleChronoApp.swift */,
+				3393530F268381BC00018E64 /* ComplicationController.swift */,
+				33935311268381BD00018E64 /* Assets.xcassets */,
+				33935316268381BD00018E64 /* Info.plist */,
+				33935313268381BD00018E64 /* Preview Content */,
+			);
+			path = "SimpleChrono WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		33935313268381BD00018E64 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				33935314268381BD00018E64 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		339352F6268381B900018E64 /* SimpleChrono */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33935321268381BD00018E64 /* Build configuration list for PBXNativeTarget "SimpleChrono" */;
+			buildPhases = (
+				339352F5268381B900018E64 /* Resources */,
+				33935320268381BD00018E64 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				339352FE268381B900018E64 /* PBXTargetDependency */,
+			);
+			name = SimpleChrono;
+			productName = SimpleChrono;
+			productReference = 339352F7268381B900018E64 /* SimpleChrono.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		339352FA268381B900018E64 /* SimpleChrono WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3393531D268381BD00018E64 /* Build configuration list for PBXNativeTarget "SimpleChrono WatchKit App" */;
+			buildPhases = (
+				339352F9268381B900018E64 /* Resources */,
+				3393531C268381BD00018E64 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33935309268381BC00018E64 /* PBXTargetDependency */,
+			);
+			name = "SimpleChrono WatchKit App";
+			productName = "SimpleChrono WatchKit App";
+			productReference = 339352FB268381B900018E64 /* SimpleChrono WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		33935305268381BC00018E64 /* SimpleChrono WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33935319268381BD00018E64 /* Build configuration list for PBXNativeTarget "SimpleChrono WatchKit Extension" */;
+			buildPhases = (
+				33935302268381BC00018E64 /* Sources */,
+				33935303268381BC00018E64 /* Frameworks */,
+				33935304268381BC00018E64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SimpleChrono WatchKit Extension";
+			productName = "SimpleChrono WatchKit Extension";
+			productReference = 33935306268381BC00018E64 /* SimpleChrono WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		339352F1268381B900018E64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					339352F6268381B900018E64 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					339352FA268381B900018E64 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					33935305268381BC00018E64 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 339352F4268381B900018E64 /* Build configuration list for PBXProject "SimpleChrono" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 339352F0268381B900018E64;
+			productRefGroup = 339352F8268381B900018E64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				339352F6268381B900018E64 /* SimpleChrono */,
+				339352FA268381B900018E64 /* SimpleChrono WatchKit App */,
+				33935305268381BC00018E64 /* SimpleChrono WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		339352F5268381B900018E64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		339352F9268381B900018E64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33935301268381BC00018E64 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33935304268381BC00018E64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33935315268381BD00018E64 /* Preview Assets.xcassets in Resources */,
+				33935312268381BD00018E64 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33935302268381BC00018E64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3393530E268381BC00018E64 /* SimpleChronoApp.swift in Sources */,
+				3393530C268381BC00018E64 /* ContentView.swift in Sources */,
+				33935310268381BC00018E64 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		339352FE268381B900018E64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 339352FA268381B900018E64 /* SimpleChrono WatchKit App */;
+			targetProxy = 339352FD268381B900018E64 /* PBXContainerItemProxy */;
+		};
+		33935309268381BC00018E64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33935305268381BC00018E64 /* SimpleChrono WatchKit Extension */;
+			targetProxy = 33935308268381BC00018E64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		33935317268381BD00018E64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		33935318268381BD00018E64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3393531A268381BD00018E64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SimpleChrono WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SimpleChrono WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SimpleChrono WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.SimpleChrono.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		3393531B268381BD00018E64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SimpleChrono WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SimpleChrono WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SimpleChrono WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.SimpleChrono.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		3393531E268381BD00018E64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = SimpleChrono_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "SimpleChrono WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.SimpleChrono.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		3393531F268381BD00018E64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = SimpleChrono_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "SimpleChrono WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.SimpleChrono.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		33935322268381BD00018E64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.SimpleChrono;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		33935323268381BD00018E64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.SimpleChrono;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		339352F4268381B900018E64 /* Build configuration list for PBXProject "SimpleChrono" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33935317268381BD00018E64 /* Debug */,
+				33935318268381BD00018E64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33935319268381BD00018E64 /* Build configuration list for PBXNativeTarget "SimpleChrono WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3393531A268381BD00018E64 /* Debug */,
+				3393531B268381BD00018E64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3393531D268381BD00018E64 /* Build configuration list for PBXNativeTarget "SimpleChrono WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3393531E268381BD00018E64 /* Debug */,
+				3393531F268381BD00018E64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33935321268381BD00018E64 /* Build configuration list for PBXNativeTarget "SimpleChrono" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33935322268381BD00018E64 /* Debug */,
+				33935323268381BD00018E64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 339352F1268381B900018E64 /* Project object */;
+}

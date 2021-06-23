@@ -16,9 +16,31 @@ class HealtKitDataManager: ObservableObject {
     private let heartRateUnit = HKUnit(from: "count/min")
     private var currentHRQuery: HKQuery?
 
+    #if os(watchOS)
+    private var currentWorkoutSession: HKWorkoutSession?
+    #endif
+
     init() {
         self.store = HKHealthStore()
         authorizeIfNeeded()
+    }
+
+    func startWorkout(type: HKWorkoutActivityType) {
+    #if os(watchOS)
+        let workoutConfig = HKWorkoutConfiguration()
+        workoutConfig.activityType = type
+        workoutConfig.locationType = .outdoor
+        let session = try? HKWorkoutSession(healthStore: store, configuration: workoutConfig)
+        session?.startActivity(with: Date())
+        currentWorkoutSession = session
+    #endif
+    }
+
+    func stopWorkout() {
+    #if os(watchOS)
+        currentWorkoutSession?.stopActivity(with: Date())
+        currentWorkoutSession = nil
+    #endif
     }
 
     func startHeartRateUpdate() {
@@ -70,7 +92,7 @@ class HealtKitDataManager: ObservableObject {
                                           predicate: devicePredicate,
                                           anchor: nil,
                                           limit: HKObjectQueryNoLimit,
-                                          resultsHandler: updateHandler)
+                                          resultsHandler: resultHandler)
 
         query.updateHandler = updateHandler
 
