@@ -31,6 +31,12 @@ struct ContentView: View {
                     Text("Workout")
                 })
                 .tag(2)
+            TransferedTracksView()
+                .tabItem({
+                    Image(systemName: "list.bullet.rectangle")
+                    Text("Tracks")
+                })
+                .tag(3)
         }
     }
 }

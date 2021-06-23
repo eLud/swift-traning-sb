@@ -24,7 +24,7 @@ struct ControlsView: View {
                     locationManager.stopLocationUpdates()
                     workoutStarted = false
 
-                    sessionManager.sendData()
+                    sessionManager.sendData(track: locationManager.track)
                 }
             } else {
                 Button("Start") {

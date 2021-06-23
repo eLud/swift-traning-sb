@@ -7,6 +7,7 @@
 
 import Foundation
 import WatchConnectivity
+import CoreLocation
 
 class SessionDataManager: NSObject, ObservableObject {
 
@@ -20,13 +21,14 @@ class SessionDataManager: NSObject, ObservableObject {
         self.session.activate()
     }
 
-    func sendData() {
-
-        if session.activationState == .activated {
-            session.sendMessage(["message":"Hello"], replyHandler: nil, errorHandler: nil)
+    func sendData(track: [CLLocation]) {
+        if let data = try? NSKeyedArchiver.archivedData(withRootObject: track, requiringSecureCoding: true) {
+            if session.activationState == .activated {
+                session.sendMessageData(data, replyHandler: nil) { error in
+                    print(error)
+                }
+            }
         }
-
-
     }
 }
 
@@ -44,5 +46,25 @@ extension SessionDataManager: WCSessionDelegate {
 
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
 
+    }
+
+    func session(_ session: WCSession, didReceiveMessageData messageData: Data) {
+        if let track = try? NSKeyedUnarchiver.unarchivedArrayOfObjects(ofClass: CLLocation.self, from: messageData) {
+
+            let userDefaults = UserDefaults.standard
+
+            if var existingTacks = userDefaults.object(forKey: "tracks") as? [Data] {
+                existingTacks.append(messageData)
+                userDefaults.set(existingTacks, forKey: "tracks")
+            } else {
+                let newArray = [messageData]
+                userDefaults.set(newArray, forKey: "tracks")
+            }
+        }
+    }
+
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        print(message)
+        replyHandler(["received":"OK"])
     }
 }
